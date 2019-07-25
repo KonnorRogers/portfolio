@@ -12,9 +12,8 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 module.exports = {
   theme: {
     extend: {},
-    container: {
-      center: true,
-      padding: "2rem"
+    fontSize: {
+      '8xl': '6rem'
     },
   },
   variants: {},

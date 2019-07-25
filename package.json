@@ -6,7 +6,7 @@
   "author": "Konnor Rogers",
   "license": "MIT",
   "scripts": {
-    "build:tailwind": "npx tailwind build src/tailwind.css -o dist/tailwind.css",
+    "build:tailwind": "npx tailwind build tailwind.css -o dist/css/tailwind.css",
     "build:sass": "node-sass scss/ -o dist/css/ --recursive",
     "build:all": "npm run build:tailwind && npm run build:sass",
     "watch:sass": "node-sass -w scss/ -o dist/css/ -r",

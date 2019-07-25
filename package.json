@@ -6,10 +6,10 @@
   "author": "Konnor Rogers",
   "license": "MIT",
   "scripts": {
-    "build:tailwind": "npx tailwind build tailwind.css -o dist/css/tailwind.css",
-    "build:sass": "node-sass scss/ -o dist/css/ --recursive",
+    "build:tailwind": "npx tailwind build tailwind.css -o src/css/tailwind.css",
+    "build:sass": "node-sass scss/ -o src/css/ --recursive",
     "build:all": "npm run build:tailwind && npm run build:sass",
-    "watch:sass": "node-sass -w scss/ -o dist/css/ -r",
+    "watch:sass": "node-sass -w scss/ -o src/css/ -r",
     "watch:server": "live-server",
     "watch:all": "run-p build:tailwind watch:sass watch:server"
   },

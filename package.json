@@ -4,7 +4,7 @@
   "description": "Responsive portfolio website",
   "main": "index.js",
   "scripts": {
-    "build:tailwind": "tailwind build src/tailwind.css -o dist/tailwind.css",
+    "build:tailwind": "npx tailwind build src/tailwind.css -o dist/tailwind.css",
     "build:sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "build:all": "npm run build:tailwind && npm run build:sass" 
   },

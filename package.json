@@ -5,14 +5,20 @@
   "main": "index.js",
   "scripts": {
     "build:tailwind": "npx tailwind build src/tailwind.css -o dist/tailwind.css",
-    "build:sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "build:all": "npm run build:tailwind && npm run build:sass" 
+    "build:sass": "node-sass scss/ -o dist/css/ --recursive",
+    "build:all": "npm run build:tailwind && npm run build:sass",
+    "watch:sass": "node-sass -w scss/ -o dist/css/ -r",
+    "watch:server": "live-server",
+    "watch:all": "run-p build:tailwind watch:sass watch:server"
   },
   "author": "Konnor Rogers",
   "license": "MIT",
-
   "dependencies": {
     "node-sass": "^4.12.0",
     "tailwindcss": "^1.0.5"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5"
   }
 }

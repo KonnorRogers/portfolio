@@ -15,9 +15,14 @@ module.exports = {
     fontSize: {
       '8xl': '6rem'
     },
+    backgroundColor: theme => ({
+      'primary': '#444',
+      'secondary': '#eece1a'
+    })
   },
   variants: {},
   plugins: [
+    require('postcss-import'),
     require('tailwindcss'),
     require('autoprefixer'),
     ...process.env.NODE_ENV === 'production'

@@ -7,19 +7,14 @@
   "license": "MIT",
   "scripts": {
     "build:tailwind": "npx tailwind build tailwind.css -o src/css/tailwind.css",
-    "build:sass": "node-sass scss/ -o src/css/ --recursive",
-    "build:all": "npm run build:tailwind && npm run build:sass",
-    "watch:sass": "node-sass -w scss/ -o src/css/ -r",
-    "watch:server": "live-server",
-    "watch:all": "run-p build:tailwind watch:sass watch:server"
+    "build:watch": "run-p build:tailwind watch:server",
+    "watch": "live-server"
   },
   "dependencies": {
-    "node-sass": "^4.12.0",
     "tailwindcss": "^1.0.5"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
-    "live-server": "^1.2.1",
-    "npm-run-all": "^4.1.5"
+    "live-server": "^1.2.1"
   }
 }

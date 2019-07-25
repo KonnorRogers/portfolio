@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "Responsive portfolio website",
   "main": "index.js",
+  "author": "Konnor Rogers",
+  "license": "MIT",
   "scripts": {
     "build:tailwind": "npx tailwind build src/tailwind.css -o dist/tailwind.css",
     "build:sass": "node-sass scss/ -o dist/css/ --recursive",
@@ -11,8 +13,6 @@
     "watch:server": "live-server",
     "watch:all": "run-p build:tailwind watch:sass watch:server"
   },
-  "author": "Konnor Rogers",
-  "license": "MIT",
   "dependencies": {
     "node-sass": "^4.12.0",
     "tailwindcss": "^1.0.5"

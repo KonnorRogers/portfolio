@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build:tailwind": "npx tailwind build ./src/tailwind.css -o src/css/tailwind.css",
-    "build:watch": "npm run build:tailwind watch:server",
+    "build:watch": "npm run build:tailwind && npm run watch",
     "watch": "live-server"
   },
   "dependencies": {

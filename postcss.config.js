@@ -1,16 +1,14 @@
-
-const purgecss = require('@fullhuman/postcss-purgecss')({
-  content: ['./public/**/*.html'],
-  defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
-})
+const purgecss = require('@fullhuman/postcss-purgecss')
 
 module.exports = {
   plugins: [
-    require('tailwindcss'),
+    require('postcss-import'),
+    require('tailwindcss')('./tailwind.config.js'),
     require('postcss-color-function'),
     require('autoprefixer'),
-    ...process.env.NODE_ENV === 'production'
-      ? [purgecss]
-      : []
+    require('postcss-nested'),
+    purgecss({
+      content: ['./**/*.html']
+    })
   ]
 }

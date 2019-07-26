@@ -6,7 +6,7 @@
   "author": "Konnor Rogers",
   "license": "MIT",
   "scripts": {
-    "build:tailwind": "npx tailwind build tailwind.css -o src/css/tailwind.css",
+    "build:tailwind": "npx tailwind build ./src/tailwind.css -o src/css/tailwind.css",
     "build:watch": "run-p build:tailwind watch:server",
     "watch": "live-server"
   },

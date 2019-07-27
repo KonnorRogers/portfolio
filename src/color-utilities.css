@@ -1,0 +1,3 @@
+.bg-primary-light-50 {
+  background-color: color-mod(theme('colors.primary') l(50%));
+}

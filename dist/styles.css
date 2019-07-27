@@ -580,15 +580,7 @@ object {
   font-size: 6rem;
 }
 
-/* .hello { */
-
-/*   @apply text-red-500; */
-
-/* } */
-
-/* @tailwind base; */
-
-/* @tailwind components; */
-
-/* @tailwind utilities; */
+.bg-primary-light-50 {
+  background-color: hsl(0, 0%, 50%);
+}
 

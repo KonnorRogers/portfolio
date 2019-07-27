@@ -1,13 +1,14 @@
 module.exports = {
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary': '#444',
+        'secondary': '#eece1a'
+      },
+    },
     fontSize: {
       '8xl': '6rem'
     },
-    backgroundColor: theme => ({
-      'primary': '#444',
-      'secondary': '#eece1a'
-    })
   },
   variants: {},
   plugins: []

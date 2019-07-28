@@ -515,10 +515,6 @@ object {
   background-color: #444;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .block {
   display: block;
 }
@@ -545,12 +541,16 @@ object {
   line-height: 1.5;
 }
 
-.m-0 {
-  margin: 0;
+.mt-20vh {
+  margin-top: 20vh;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.p-16 {
+  padding: 4rem;
 }
 
 .py-1 {
@@ -561,6 +561,10 @@ object {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.fixed {
+  position: fixed;
 }
 
 .relative {
@@ -576,11 +580,43 @@ object {
   color: #fff;
 }
 
+.text-secondary {
+  color: #eece1a;
+}
+
 .text-8xl {
   font-size: 6rem;
 }
 
-.bg-primary-light-50 {
-  background-color: hsl(50.943396226415096, 86.1788617886%, 50%);
+.w-screen {
+  width: 100vw;
 }
+
+.z-2 {
+  z-index: 2;
+}
+
+.bg-primary-w20-a50 {
+  background: hsla(0, 0%, 20%, 0.5);
+}
+
+.link {
+  padding: 0.5rem;
+}
+
+.link:hover {
+  color: #eece1a;
+  /* <property>  <duration> <timing-func> <delay>*/
+  transition: color 0.5s ease-out;
+}
+
+/* #bg-img { */
+
+/*   background: url('../img/background.jpg'); */
+
+/*   background-attachment: fixed; */
+
+/*   background-size: cover; */
+
+/* } */
 

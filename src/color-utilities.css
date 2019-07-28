@@ -1,7 +1,4 @@
-.bg-primary-light-50 {
-  background-color: color-mod(theme('colors.primary') l(50%));
+.bg-primary-w20-a50 {
+  background: color-mod(theme('colors.primary') l(20%) a(50%));
 }
 
-.bg-primary-light-25 {
-  background-color: color-mod(theme('colors.primary') l(25%));
-}

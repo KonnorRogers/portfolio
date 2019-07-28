@@ -12,6 +12,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
+        exclude: /node_modules/,
         use: [ 
           {
             loader: MiniCssExtractPlugin.loader,
@@ -34,5 +35,5 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, "dist"),
     watchContentBase: true
-  },
+  }
 }

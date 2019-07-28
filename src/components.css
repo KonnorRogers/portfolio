@@ -1,0 +1,12 @@
+.ease-out {
+  /* <property>  <duration> <timing-func> <delay>*/
+  transition: color 1.5s ease-out;
+}
+.link {
+  @apply p-2;
+}
+
+.link:hover {
+  @apply text-secondary ease-out;
+}
+

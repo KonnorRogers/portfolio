@@ -9,6 +9,9 @@ module.exports = {
     fontSize: {
       '8xl': '6rem'
     },
+    zIndex: {
+      '2': 2
+    },
   },
   variants: {},
   plugins: []

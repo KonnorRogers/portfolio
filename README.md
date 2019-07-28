@@ -10,30 +10,28 @@ npm install
 yarn install
 ```
 
-## Building Tailwind / SASS
+## Dependencies
 
-```bash
-npm run build:all
-```
+* Cross-env
+* Webpack
+* Postcss
+* TailwindCSS
+* PurgeCSS
 
 ## Local environment w/ auto reload
 
 ```bash
-npm run watch:all
+npm run dev
 ```
 
-Your site will now be viewable @ http://127.0.0.1:8080/dist/
+Open up localhost:8080 in a web browser
 
-## All commands
+## Deployment
+
+To create production ready code via PurgeCSS, run the following command:
 
 ```bash
-npm run build:tailwind # Builds tailwind into dist/tailwind.css
-npm run build:sass # Builds sass directory into dist/css
-npm run build:all # Combines tailwind & sass build commands
-npm run watch:sass # Watches for changes to sass files
-npm run watch:server # Auto reloads the server via live-server
-
-# Combines watching sass changes and hot reloading
-# Does so via npm-run-all -p (runs them in parallel)
-npm run watch:all 
+npm run prod
 ```
+
+This will create a production ready dist/ directory

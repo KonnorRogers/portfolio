@@ -12,6 +12,9 @@ module.exports = {
     zIndex: {
       '2': 2
     },
+    margin: {
+      '20vh': '20vh'
+    },
   },
   variants: {},
   plugins: []

@@ -10,8 +10,8 @@
   @apply text-secondary ease-out;
 }
 
-/* #bg-img { */
-/*   background: url('../img/background.jpg'); */
-/*   background-attachment: fixed; */
-/*   background-size: cover; */
-/* } */
+#bg-img {
+  background: url('./img/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}

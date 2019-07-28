@@ -2,3 +2,7 @@
   background: color-mod(theme('colors.primary') l(20%) a(50%));
 }
 
+.bg-primary-a90 {
+  background: color-mod(theme('colors.primary') a(90%));
+}
+

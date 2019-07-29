@@ -15,6 +15,12 @@ module.exports = {
       margin: {
         '20vh': '20vh'
       },
+      inset: {
+        '2': '2rem'
+      },
+      height: {
+        'tiny': '3px',
+      },
     },
   },
   variants: {},

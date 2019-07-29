@@ -6,7 +6,7 @@
   "author": "Konnor Rogers",
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --watch --config webpack.config.js",
     "prod": "cross-env NODE_ENV=production webpack --no-progress --config webpack.config.js"
   },
   "dependencies": {

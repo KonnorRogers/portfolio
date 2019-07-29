@@ -17,6 +17,7 @@ yarn install
 * Postcss
 * TailwindCSS
 * PurgeCSS
+* Multiple webpack / Postcss plugins listed in config files
 
 ## Local environment w/ auto reload
 

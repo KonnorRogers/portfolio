@@ -30,15 +30,6 @@ module.exports = {
           'postcss-loader'
         ],
       },
-      // {
-      //   test: /\.(png|svg|jpg|gif)$/,
-      //   use: [
-      //     {
-      //     loader: 'file-loader',
-      //       options: { outputPath: 'images' }
-      //     },
-      //   ],
-      // },
       {
         test: /\.(png|jpg|gif)$/i,
         use: [

@@ -21,6 +21,9 @@ module.exports = {
       height: {
         'tiny': '3px',
       },
+      opacity: {
+        '90': '.9'
+      },
     },
   },
   variants: {},

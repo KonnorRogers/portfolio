@@ -1,8 +1,12 @@
-.bg-primary-w20-a50 {
+.bg-primary-l20-a50 {
   background: color-mod(theme('colors.primary') l(20%) a(50%));
 }
 
 .bg-primary-a90 {
   background: color-mod(theme('colors.primary') a(90%));
+}
+
+.bg-primary-d5 {
+  background: color-mod(theme('colors.primary') l(-5%));
 }
 

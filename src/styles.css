@@ -2,4 +2,5 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import "./css/color-utilities.css";
+@import "./css/transforms.css";
 @import "./css/components.css";

@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <script src="https://kit.fontawesome.com/35f34fbec9.js"></script>
   </head>
-  <body class="text-white bg-primary font-mono h-screen m-0 leading-normal" id="bg-img">
+  <body class="text-white bg-primary font-mono h-screen m-0 leading-normal bg-fixed bg-cover" id="bg-img"
+    style="background: url('./img/background.jpg')">
     <div class="absolute bg-center h-screen w-screen bg-primary-a90 -z-1"></div>
     <header class="fixed z-2 w-screen">
         <div id="menu-btn" class="absolute ease-out cursor-pointer top-2 right-2 h-8 w-8">
@@ -13,32 +14,36 @@
           <div class="btn-line"></div>
         </div>
 
-      <nav id="menu" class="hidden w-full -z-1 top-0 fixed">
-        <div id="menu-branding" class="hidden flex flex-col flex-wrap
-                                       justify-center items-center list-none h-screen
-                                       float-left w-1/2 overflow-hidden opacity-90">
-          <div class="portrait"></div>
+      <nav id="menu" class="invisible w-full -z-1 top-0 fixed">
+        <div id="menu-branding" class="invisible flex flex-col flex-wrap
+                                       justify-center items-center list-none
+                                       h-screen float-left w-1/2 ease-out
+                                       overflow-hidden opacity-90
+                                       bg-primary slide-up">
+          <div class="portrait w-64 h-64 rounded-full border-secondary
+                      border-2 border-solid"
+               style="background: url('./img/portrait.jpg')"></div>
         </div>
-        <div id="menu-nav" class="hidden flex flex-col flex-wrap
+        <div id="menu-nav" class="invisible flex flex-col flex-wrap
                                   justify-center items-center list-none h-screen
                                   float-left w-1/2 overflow-hidden bg-primary-d5
-                                  opacity-90 ease-out translate3d-0-neg100-0">
-          <li class="nav-item hidden">
-            <a href="/" class="nav-link">
+                                  opacity-90 ease-out slide-down">
+          <li class="nav-item invisible ease-out slide-left-1">
+            <a href="/" class="nav-link text-secondary">
               Home
             </a>
           </li>
-          <li class="nav-item hidden">
+          <li class="nav-item invisible ease-out slide-left-2">
             <a href="/about.html" class="nav-link">
               About
             </a>
           </li>
-          <li class="nav-item hidden">
+          <li class="nav-item invisible ease-out slide-left-3">
             <a href="/projects.html" class="nav-link">
               Projects
             </a>
           </li>
-          <li class="nav-item hidden">
+          <li class="nav-item invisible ease-out slide-left-4">
             <a href="/contact.html" class="nav-link">
               Contact Information
             </a>
@@ -57,10 +62,10 @@
       </h2>
 
       <div class="mt-4">
-        <a class="link" href="https://www.linkedin.com/in/konnor-rogers-78b120175/">
+        <a class="icon-link" href="https://www.linkedin.com/in/konnor-rogers-78b120175/">
           <i class="fab fa-linkedin fa-2x"></i>
         </a>
-        <a class="link" href="https://github.com/ParamagicDev">
+        <a class="icon-link" href="https://github.com/ParamagicDev">
           <i class="fab fa-github fa-2x"></i>
         </a>
       </div>

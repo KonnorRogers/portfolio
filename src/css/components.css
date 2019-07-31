@@ -3,18 +3,12 @@
   transition: all 0.5s ease-out;
 }
 
-.link {
+.icon-link {
   @apply p-2;
 }
 
-.link:hover {
+.icon-link:hover {
   @apply text-secondary ease-out;
-}
-
-#bg-img {
-  background: url('./img/background.jpg');
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .btn-line {
@@ -34,3 +28,44 @@
   @apply rotate-neg-45-trans-7-neg8;
 }
 
+.slide-down.invisible {
+  @apply translateY-neg100;
+}
+
+.slide-up.invisible {
+  @apply translateY-100;
+}
+
+/* Resets to where it should be in the DOM */
+.slide-down.visible, .slide-down.visible, .nav-item.visible {
+  @apply no-translate;
+}
+
+/* Pull the item to the right */
+.nav-item {
+  @apply translateX-600;
+}
+
+.slide-left-1.visible {
+  @apply trans-delay-1;
+}
+
+.slide-left-2.visible {
+  @apply trans-delay-2;
+}
+
+.slide-left-3.visible {
+  @apply trans-delay-3;
+}
+
+.slide-left-4.visible {
+  @apply trans-delay-4;
+}
+
+.nav-link {
+  @apply uppercase inline-block relative text-2xl py-4 px-0 font-light ease-out;
+}
+
+.nav-link:hover {
+  @apply text-secondary;
+}

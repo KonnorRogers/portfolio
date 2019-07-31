@@ -10,11 +10,34 @@
   transform: rotate(-45deg) translate(7px, -8px);
 }
 
-.translate3d-0-neg100-0 {
-  transform: translate3d(0, -100%, 0);
+.translateY-100 {
+  transform: translateY(100%);
 }
 
-.translate3d-0-0-0 {
+.translateY-neg100 {
+  transform: translateY(-100%);
+}
+
+.no-translate {
   transform: translate3d(0, 0, 0);
 }
 
+.translateX-600 {
+  transform: translateX(600px);
+}
+
+.trans-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.trans-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.trans-delay-3 {
+  transition-delay: 0.3s;
+}
+
+.trans-delay-4 {
+  transition-delay: 0.4s;
+}

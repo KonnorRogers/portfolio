@@ -31,13 +31,12 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|gif)$/i,
+        test: /\.(png|jpe?g|gif)$/,
         use: [
           {
-            loader: 'url-loader',
+            loader: 'file-loader',
             options: {
-              limit: 8192,
-              outputPath: 'images',
+              name: './img/[name].[ext]',
             },
           },
         ],
@@ -50,8 +49,8 @@ module.exports = {
 
     // generates a new HTML file @ dist/index.html
     new HtmlWebpackPlugin({
-      'meta': { 
-        'viewport': 'width=width-device, initial-scale=1'
+      meta: { 
+        'viewport': 'width=device-width, initial-scale=1'
       },
       title: "Konnor's portfolio",
       template: './src/index.html'

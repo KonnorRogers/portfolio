@@ -37,7 +37,8 @@
 }
 
 /* Resets to where it should be in the DOM */
-.slide-down.visible, .slide-down.visible, .nav-item.visible {
+.slide-down.visible .slide-down.visible .nav-item.visible
+.slide-right.visible .slide-left.visible {
   @apply no-translate;
 }
 
@@ -46,20 +47,28 @@
   @apply translateX-600;
 }
 
-.slide-left-1.visible {
+.slide-delay-1.visible {
   @apply trans-delay-1;
 }
 
-.slide-left-2.visible {
+.slide-delay-2.visible {
   @apply trans-delay-2;
 }
 
-.slide-left-3.visible {
+.slide-delay-3.visible {
   @apply trans-delay-3;
 }
 
-.slide-left-4.visible {
+.slide-delay-4.visible {
   @apply trans-delay-4;
+}
+
+.slide-left.invisible {
+  @apply translateX-neg100pct
+}
+
+.slide-right.invisible {
+  @apply translateX-100pct
 }
 
 .nav-link {

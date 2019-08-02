@@ -26,6 +26,14 @@
   transform: translateX(600px);
 }
 
+.translateX-100pct {
+  transform: translateX(100%);
+}
+
+.translateX-neg100pct {
+  transform: translateX(-100%);
+}
+
 .trans-delay-1 {
   transition-delay: 0.1s;
 }

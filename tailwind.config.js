@@ -20,7 +20,8 @@ module.exports = {
       },
       height: {
         'tiny': '3px',
-        '3/4': '75vh'
+        '3/4': '75vh',
+        '1/4': '25vh'
       },
       opacity: {
         '90': '.9'

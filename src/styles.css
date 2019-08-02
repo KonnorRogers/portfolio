@@ -1,6 +1,8 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
-@import "tailwindcss/utilities";
 @import "./css/transforms.css";
 @import "./css/components.css";
+@import "./css/slides.css";
+@import "tailwindcss/utilities";
+@import "./css/rotate-menu.css";
 @import "./css/color-utilities.css";

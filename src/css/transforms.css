@@ -1,51 +1,53 @@
-.rotate-180 {
-  transform: rotate(180deg);
-}
+@responsive {
+  .rotate-180 {
+    transform: rotate(180deg);
+  }
 
-.rotate-45-trans-7-8 {
-  transform: rotate(45deg) translate(7px, 8px);
-}
+  .rotate-45-trans-7-8 {
+    transform: rotate(45deg) translate(7px, 8px);
+  }
 
-.rotate-neg-45-trans-7-neg8 {
-  transform: rotate(-45deg) translate(7px, -8px);
-}
+  .rotate-neg-45-trans-7-neg8 {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
 
-.translateY-100 {
-  transform: translateY(100%);
-}
+  .translateY-100pct {
+    transform: translateY(100%);
+  }
 
-.translateY-neg100 {
-  transform: translateY(-100%);
-}
+  .translateY-neg100pct {
+    transform: translateY(-100%);
+  }
 
-.no-translate {
-  transform: translate3d(0, 0, 0);
-}
+  .no-translate {
+    transform: translate3d(0, 0, 0);
+  }
 
-.translateX-600 {
-  transform: translateX(600px);
-}
+  .translateX-600px {
+    transform: translateX(600px);
+  }
 
-.translateX-100pct {
-  transform: translateX(100%);
-}
+  .translateX-100pct {
+    transform: translateX(100%);
+  }
 
-.translateX-neg100pct {
-  transform: translateX(-100%);
-}
+  .translateX-neg100pct {
+    transform: translateX(-100%);
+  }
 
-.trans-delay-1 {
-  transition-delay: 0.1s;
-}
+  .trans-delay-1 {
+    transition-delay: 0.1s;
+  }
 
-.trans-delay-2 {
-  transition-delay: 0.2s;
-}
+  .trans-delay-2 {
+    transition-delay: 0.2s;
+  }
 
-.trans-delay-3 {
-  transition-delay: 0.3s;
-}
+  .trans-delay-3 {
+    transition-delay: 0.3s;
+  }
 
-.trans-delay-4 {
-  transition-delay: 0.4s;
+  .trans-delay-4 {
+    transition-delay: 0.4s;
+  }
 }

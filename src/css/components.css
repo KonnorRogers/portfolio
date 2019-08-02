@@ -15,66 +15,26 @@
   @apply w-8 h-tiny bg-white mb-2 ease-out;
 }
 
-.rotate-menu {
-  @apply rotate-180;
-}
-.rotate-menu div:nth-child(1) {
-  @apply rotate-45-trans-7-8;
-}
-.rotate-menu div:nth-child(2) {
-  @apply opacity-0;
-}
-.rotate-menu div:nth-child(3) {
-  @apply rotate-neg-45-trans-7-neg8;
-}
-
-.slide-down.invisible {
-  @apply translateY-neg100;
-}
-
-.slide-up.invisible {
-  @apply translateY-100;
-}
-
-/* Resets to where it should be in the DOM */
-.slide-down.visible .slide-down.visible .nav-item.visible
-.slide-right.visible .slide-left.visible {
-  @apply no-translate;
-}
-
-/* Pull the item to the right */
-.nav-item {
-  @apply translateX-600;
-}
-
-.slide-delay-1.visible {
-  @apply trans-delay-1;
-}
-
-.slide-delay-2.visible {
-  @apply trans-delay-2;
-}
-
-.slide-delay-3.visible {
-  @apply trans-delay-3;
-}
-
-.slide-delay-4.visible {
-  @apply trans-delay-4;
-}
-
-.slide-left.invisible {
-  @apply translateX-neg100pct
-}
-
-.slide-right.invisible {
-  @apply translateX-100pct
-}
-
 .nav-link {
   @apply uppercase inline-block relative text-2xl py-4 px-0 font-light ease-out;
 }
 
 .nav-link:hover {
   @apply text-secondary;
+}
+
+.nav-item {
+  @apply translateX-600px;
+}
+
+/* For smaller screens, use the smaller portrait img */
+#portrait {
+  background: url("./img/portrait_small.jpg");
+}
+
+/* For medium screens or larger, use the normal portrait img */
+@screen md {
+  #portrait {
+    background: url("./img/portrait.jpg");
+  }
 }

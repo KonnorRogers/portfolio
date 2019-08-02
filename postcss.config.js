@@ -17,7 +17,7 @@ const nested = require('postcss-nested')
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['./**/*.html'],
   // Whitelist any patterns css that is dynamically loaded
-  whitelistPatternsChildren: [/rotate/, /translate/, /block/],
+  whitelistPatternsChildren: [/rotate/, /trans/, /slide/, /nav/],
   // Include any special characters you're using in this regular expression
   defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
 })

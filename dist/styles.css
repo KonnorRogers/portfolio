@@ -320,7 +320,7 @@ html {
  * Removes the default spacing and border for appropriate elements.
  */
 
-blockquote,
+
 h1,
 h2,
 h3,
@@ -547,6 +547,22 @@ object {
   transform: translateX(-100%);
 }
 
+.trans-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.trans-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.trans-delay-3 {
+  transition-delay: 0.3s;
+}
+
+.trans-delay-4 {
+  transition-delay: 0.4s;
+}
+
 .ease-out {
   /* <property>  <duration> <timing-func> <delay>*/
   transition: all 0.5s ease-out;
@@ -607,6 +623,11 @@ object {
   }
 }
 
+.slide-left.visible, .slide-right.visible, .slide-down.visible,
+.slide-up.visible, .nav-item.visible {
+  transform: translate3d(0, 0, 0);
+}
+
 /* Resets to where it should be in the DOM */
 
 .slide-left {
@@ -617,12 +638,48 @@ object {
   transform: translateX(100%);
 }
 
+.slide-down {
+  transform: translateY(-100%);
+}
+
+.slide-up {
+  transform: translateY(100%);
+}
+
+.slide-delay-1.visible {
+  transition-delay: 0.1s;
+}
+
+.slide-delay-2.visible {
+  transition-delay: 0.2s;
+}
+
+.slide-delay-3.visible {
+  transition-delay: 0.3s;
+}
+
+.slide-delay-4.visible {
+  transition-delay: 0.4s;
+}
+
 .bg-fixed {
   background-attachment: fixed;
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-primary {
   background-color: #444;
+}
+
+.hover\:bg-transparent:hover {
+  background-color: transparent;
+}
+
+.focus\:bg-transparent:focus {
+  background-color: transparent;
 }
 
 .bg-center {
@@ -633,8 +690,20 @@ object {
   background-size: cover;
 }
 
+.border-transparent {
+  border-color: transparent;
+}
+
 .border-secondary {
   border-color: #eece1a;
+}
+
+.hover\:border-transparent:hover {
+  border-color: transparent;
+}
+
+.focus\:border-transparent:focus {
+  border-color: transparent;
 }
 
 .rounded-full {
@@ -655,10 +724,6 @@ object {
 
 .block {
   display: block;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 .flex {
@@ -810,12 +875,24 @@ object {
   text-align: center;
 }
 
+.text-transparent {
+  color: transparent;
+}
+
 .text-white {
   color: #fff;
 }
 
 .text-secondary {
   color: #eece1a;
+}
+
+.hover\:text-transparent:hover {
+  color: transparent;
+}
+
+.focus\:text-transparent:focus {
+  color: transparent;
 }
 
 .text-2xl {
@@ -919,14 +996,74 @@ object {
     transform: translateX(-100%);
   }
 
-  /* Resets to where it should be in the DOM */
-
-  .sm\:block {
-    display: block;
+  .sm\:trans-delay-1 {
+    transition-delay: 0.1s;
   }
 
-  .sm\:inline-block {
-    display: inline-block;
+  .sm\:trans-delay-2 {
+    transition-delay: 0.2s;
+  }
+
+  .sm\:trans-delay-3 {
+    transition-delay: 0.3s;
+  }
+
+  .sm\:trans-delay-4 {
+    transition-delay: 0.4s;
+  }
+
+  /* Resets to where it should be in the DOM */
+
+  .sm\:slide-left {
+    transform: translateX(-100%);
+  }
+
+  .sm\:slide-right {
+    transform: translateX(100%);
+  }
+
+  .sm\:slide-down {
+    transform: translateY(-100%);
+  }
+
+  .sm\:slide-up {
+    transform: translateY(100%);
+  }
+
+  .sm\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .sm\:hover\:bg-transparent:hover {
+    background-color: transparent;
+  }
+
+  .sm\:focus\:bg-transparent:focus {
+    background-color: transparent;
+  }
+
+  .sm\:border-transparent {
+    border-color: transparent;
+  }
+
+  .sm\:hover\:border-transparent:hover {
+    border-color: transparent;
+  }
+
+  .sm\:focus\:border-transparent:focus {
+    border-color: transparent;
+  }
+
+  .sm\:text-transparent {
+    color: transparent;
+  }
+
+  .sm\:hover\:text-transparent:hover {
+    color: transparent;
+  }
+
+  .sm\:focus\:text-transparent:focus {
+    color: transparent;
   }
 
   .sm\:text-8xl {
@@ -971,7 +1108,31 @@ object {
     transform: translateX(-100%);
   }
 
+  .md\:trans-delay-1 {
+    transition-delay: 0.1s;
+  }
+
+  .md\:trans-delay-2 {
+    transition-delay: 0.2s;
+  }
+
+  .md\:trans-delay-3 {
+    transition-delay: 0.3s;
+  }
+
+  .md\:trans-delay-4 {
+    transition-delay: 0.4s;
+  }
+
   /* Resets to where it should be in the DOM */
+
+  .md\:slide-left {
+    transform: translateX(-100%);
+  }
+
+  .md\:slide-right {
+    transform: translateX(100%);
+  }
 
   .md\:slide-down {
     transform: translateY(-100%);
@@ -981,12 +1142,28 @@ object {
     transform: translateY(100%);
   }
 
-  .md\:block {
-    display: block;
+  .md\:bg-transparent {
+    background-color: transparent;
   }
 
-  .md\:inline-block {
-    display: inline-block;
+  .md\:hover\:bg-transparent:hover {
+    background-color: transparent;
+  }
+
+  .md\:focus\:bg-transparent:focus {
+    background-color: transparent;
+  }
+
+  .md\:border-transparent {
+    border-color: transparent;
+  }
+
+  .md\:hover\:border-transparent:hover {
+    border-color: transparent;
+  }
+
+  .md\:focus\:border-transparent:focus {
+    border-color: transparent;
   }
 
   .md\:items-stretch {
@@ -1011,6 +1188,18 @@ object {
 
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-transparent {
+    color: transparent;
+  }
+
+  .md\:hover\:text-transparent:hover {
+    color: transparent;
+  }
+
+  .md\:focus\:text-transparent:focus {
+    color: transparent;
   }
 
   .md\:w-64 {
@@ -1059,14 +1248,74 @@ object {
     transform: translateX(-100%);
   }
 
-  /* Resets to where it should be in the DOM */
-
-  .lg\:block {
-    display: block;
+  .lg\:trans-delay-1 {
+    transition-delay: 0.1s;
   }
 
-  .lg\:inline-block {
-    display: inline-block;
+  .lg\:trans-delay-2 {
+    transition-delay: 0.2s;
+  }
+
+  .lg\:trans-delay-3 {
+    transition-delay: 0.3s;
+  }
+
+  .lg\:trans-delay-4 {
+    transition-delay: 0.4s;
+  }
+
+  /* Resets to where it should be in the DOM */
+
+  .lg\:slide-left {
+    transform: translateX(-100%);
+  }
+
+  .lg\:slide-right {
+    transform: translateX(100%);
+  }
+
+  .lg\:slide-down {
+    transform: translateY(-100%);
+  }
+
+  .lg\:slide-up {
+    transform: translateY(100%);
+  }
+
+  .lg\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .lg\:hover\:bg-transparent:hover {
+    background-color: transparent;
+  }
+
+  .lg\:focus\:bg-transparent:focus {
+    background-color: transparent;
+  }
+
+  .lg\:border-transparent {
+    border-color: transparent;
+  }
+
+  .lg\:hover\:border-transparent:hover {
+    border-color: transparent;
+  }
+
+  .lg\:focus\:border-transparent:focus {
+    border-color: transparent;
+  }
+
+  .lg\:text-transparent {
+    color: transparent;
+  }
+
+  .lg\:hover\:text-transparent:hover {
+    color: transparent;
+  }
+
+  .lg\:focus\:text-transparent:focus {
+    color: transparent;
   }
 }
 
@@ -1107,14 +1356,74 @@ object {
     transform: translateX(-100%);
   }
 
-  /* Resets to where it should be in the DOM */
-
-  .xl\:block {
-    display: block;
+  .xl\:trans-delay-1 {
+    transition-delay: 0.1s;
   }
 
-  .xl\:inline-block {
-    display: inline-block;
+  .xl\:trans-delay-2 {
+    transition-delay: 0.2s;
+  }
+
+  .xl\:trans-delay-3 {
+    transition-delay: 0.3s;
+  }
+
+  .xl\:trans-delay-4 {
+    transition-delay: 0.4s;
+  }
+
+  /* Resets to where it should be in the DOM */
+
+  .xl\:slide-left {
+    transform: translateX(-100%);
+  }
+
+  .xl\:slide-right {
+    transform: translateX(100%);
+  }
+
+  .xl\:slide-down {
+    transform: translateY(-100%);
+  }
+
+  .xl\:slide-up {
+    transform: translateY(100%);
+  }
+
+  .xl\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .xl\:hover\:bg-transparent:hover {
+    background-color: transparent;
+  }
+
+  .xl\:focus\:bg-transparent:focus {
+    background-color: transparent;
+  }
+
+  .xl\:border-transparent {
+    border-color: transparent;
+  }
+
+  .xl\:hover\:border-transparent:hover {
+    border-color: transparent;
+  }
+
+  .xl\:focus\:border-transparent:focus {
+    border-color: transparent;
+  }
+
+  .xl\:text-transparent {
+    color: transparent;
+  }
+
+  .xl\:hover\:text-transparent:hover {
+    color: transparent;
+  }
+
+  .xl\:focus\:text-transparent:focus {
+    color: transparent;
   }
 }
 

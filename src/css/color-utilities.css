@@ -10,3 +10,7 @@
   background: color-mod(theme('colors.primary') shade(10%) a(90%));
 }
 
+.bg-primary-tint5 {
+  background: color-mod(theme('colors.primary') tint(5%));
+}
+

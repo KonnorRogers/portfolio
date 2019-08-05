@@ -3,7 +3,8 @@ module.exports = {
     extend: {
       colors: {
         'primary': '#444',
-        'secondary': '#eece1a'
+        'secondary': '#eece1a',
+        'primary-text': '#fff'
       },
       fontSize: {
         '8xl': '6rem'

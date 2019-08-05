@@ -13,7 +13,7 @@
 }
 
 .btn-line {
-  @apply w-8 h-tiny bg-white mb-2 ease-out;
+  @apply w-8 h-tiny bg-primary-text mb-2 ease-out;
 }
 
 /* Navigation */

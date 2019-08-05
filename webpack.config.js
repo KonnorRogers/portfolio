@@ -49,11 +49,12 @@ module.exports = {
 
     // generates a new HTML file @ dist/index.html
     new HtmlWebpackPlugin({
-      meta: { 
-        'viewport': 'width=device-width, initial-scale=1'
-      },
-      title: "Konnor's portfolio",
-      template: './src/index.html'
+      template: './src/index.html',
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/about.html',
+      filename: 'about.html'
     }),
     // Extracts the css
     new MiniCssExtractPlugin({

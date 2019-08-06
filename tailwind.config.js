@@ -21,6 +21,7 @@ module.exports = {
       },
       height: {
         'tiny': '3px',
+        '50px': '50px',
         '75vh': '75vh',
         '25vh': '25vh'
       },

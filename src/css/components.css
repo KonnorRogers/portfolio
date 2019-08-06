@@ -8,8 +8,10 @@
   @apply p-2;
 }
 
-.min-h-screen-minus-50px {
-  min-height: calc(100vh - 50px);
+@responsive {
+  .min-h-screen-minus-50px {
+    min-height: calc(100vh - 50px);
+  }
 }
 
 .icon-link:hover {

@@ -45,5 +45,27 @@ webpack-clean-plugin
 
 ## Making changes
 
-The tailwind.config.js has multiple configurations to include the primary
+The <strong>tailwind.config.js</strong> has multiple configurations to include the primary
 and secondary colors as well as the text color for the site.
+
+To add a new HTML page, go into <strong>webpack.config.js</strong> and add the
+following lines of code in the plugins section:
+
+```javascript
+// Above code omitted for brevity
+// ...
+plugins: [
+  // ...
+  new HtmlWebpackPlugin({
+    // Where to pull the html file from
+    template: './src/new.html'
+    // What to name the html file in the dist/ directory
+    filename: 'new.html'
+  }),
+// ...
+// Below code omitted for brevity
+]
+
+```
+
+

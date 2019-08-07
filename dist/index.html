@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Konnor's Portfolio</title>
+    <script src="https://kit.fontawesome.com/35f34fbec9.js"></script>
+  <link href="styles.css" rel="stylesheet"></head>
+  <body class="items-center text-center md:text-left md:items-stretch text-primary-text
+               bg-primary font-mono h-screen m-0 leading-normal
+               bg-fixed bg-cover"
+        id="bg-img" style="background: url('./img/background.jpg')">
+    <div class="absolute bg-center h-screen w-screen bg-primary-a90 -z-1"></div>
+    <header class="fixed z-2 w-screen">
+        <div id="menu-btn" class="absolute ease-out cursor-pointer top-2 right-2 h-8 w-8">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
+
+      <nav id="menu" class="invisible w-full h-screen -z-1 top-0 fixed">
+        <div id="menu-branding" class="h-25vh float-none w-screen min-h-0 slide-left
+                                       flex flex-col flex-wrap invisible
+                                       justify-center items-center list-none
+                                       overflow-hidden opacity-90
+                                       bg-primary md:slide-up
+                                       md:h-screen md:float-left md:w-1/2 ease-out">
+          <div id="portrait" class="w-40 h-40 md:w-64 md:h-64 rounded-full
+                                    border-secondary border-2 border-solid">
+          </div>
+        </div>
+        <div id="menu-nav" class="h-75vh text-2xl float-none w-screen min-h-0 slide-right font-normal
+                                  invisible flex flex-col flex-wrap
+                                  justify-center items-center list-none
+                                  overflow-hidden bg-primary-shade20-a90
+                                  opacity-90 ease-out
+                                  md:slide-down md:w-1/2 md:h-screen">
+          <li class="nav-item invisible ease-out slide-delay-1">
+            <a href="/" class="nav-link text-secondary">
+              Home
+            </a>
+          </li>
+          <li class="nav-item invisible ease-out slide-delay-2">
+            <a href="about.html" class="nav-link">
+              About
+            </a>
+          </li>
+          <li class="nav-item invisible ease-out slide-delay-3">
+            <a href="projects.html" class="nav-link">
+              Projects
+            </a>
+          </li>
+          <li class="nav-item invisible ease-out slide-delay-4">
+            <a href="contact.html" class="nav-link">
+              Contact Information
+            </a>
+          </li>
+        </div>
+      </nav>
+    </header>
+
+    <main class="p-16 h-screen overflow-hidden" id="home">
+      <h1 class="mt-20vh text-6xl mb-4 font-normal leading-none sm:text-8xl md:leading-normal">
+        Konnor <span class="text-secondary">Rogers</span>
+      </h1>
+
+      <h2 class="mb-8 py-1 px-4 text-lg font-normal bg-primary-t20-a50">
+        Full Stack Web Developer
+      </h2>
+
+      <div class="mt-4">
+        <a class="icon-link" href="https://www.linkedin.com/in/konnor-rogers-78b120175/">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/ParamagicDev">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </div>
+    </main>
+  <script type="text/javascript" src="bundle.js"></script></body>
+</html>

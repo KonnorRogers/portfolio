@@ -1,3 +1,4 @@
+/* Uses the color-mod-function postcss plugin */
 .bg-primary-t20-a50 {
   background: color-mod(theme('colors.primary') tint(20%) a(50%));
 }

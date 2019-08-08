@@ -44,7 +44,7 @@ module.exports = {
     ],
   },
   plugins: [
-    // cleans out the dist/ directory
+    // cleans out the dist/ directory for production
     new CleanWebpackPlugin(),
 
     // generates a new HTML file @ dist/index.html

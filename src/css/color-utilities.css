@@ -1,6 +1,8 @@
-/* Uses the color-mod-function postcss plugin */
-.bg-primary-t20-a50 {
-  background: color-mod(theme('colors.primary') tint(20%) a(50%));
+@variants hover {
+  /* Uses the color-mod-function postcss plugin */
+  .bg-primary-t20-a50 {
+    background: color-mod(theme('colors.primary') tint(20%) a(50%));
+  }
 }
 
 .bg-primary-a90 {
@@ -17,4 +19,8 @@
 
 .bg-primary-shade50 {
   background: color-mod(theme('colors.primary') shade(50%));
+}
+
+.bg-secondary-shade20 {
+  background: color-mod(theme('colors.secondary') shade(20%));
 }

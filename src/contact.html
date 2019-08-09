@@ -9,7 +9,7 @@
   <body class="items-center text-center md:text-left md:items-stretch text-primary-text
   bg-primary font-sans h-full m-0 leading-normal">
     <div class="absolute bg-center h-screen w-full bg-primary-a90 -z-1"></div>
-    <header class="fixed z-2 w-full">
+    <header class="md:hidden fixed z-2 w-full">
       <div id="menu-btn" class="absolute ease-out cursor-pointer top-2 right-2 h-8 w-8">
         <div class="btn-line"></div>
         <div class="btn-line"></div>
@@ -56,58 +56,55 @@
         </div>
       </nav>
     </header>
+    <header class="hidden md:block md:w-screen">
+      <nav class="hidden md:flex bg-primary-shade20-a90 md:w-screen list-none justify-center align-center py-4">
+          <li class="mx-4">
+            <a href="/" class="hover:bg-primary-t20-a50 hover:text-secondary p-2 px-4 ease-out">
+              Home
+            </a>
+          </li>
+          <li class="mx-4">
+            <a href="about.html" class="hover:bg-primary-t20-a50 hover:text-secondary p-2 px-4 ease-out">
+              About
+            </a>
+          </li>
+          <li class="mx-4">
+            <a href="projects.html" class="hover:bg-primary-t20-a50 hover:text-secondary p-2 px-4 ease-out">
+              Projects
+            </a>
+          </li>
+          <li class="mx-4">
+            <a href="contact.html" class="hover:bg-primary-t20-a50 hover:text-secondary py-2 px-4 ease-out">
+              Contact
+            </a>
+          </li>
+      </nav>
+    </header>
 
     <main class="p-4 h-full md:min-h-screen-minus-50px w-full
     md:overflow-hidden
-                 flex flex-col" id="about">
-      <h1 class="w-full text-6xl text-center font-normal leading-none md:leading-normal">
+                 flex flex-col" id="info">
+      <h1 class="w-screen text-6xl text-center font-normal leading-none md:leading-normal">
         Contact <span class="text-secondary">Information</span>
       </h1>
 
-      <div id="about-info" class="w-full mt-6 md:overflow-hidden
-      flex flex-col md:flex-row ml-auto">
-        <img src="img/portrait.jpg" alt="Konnor Rogers picture"
-                                    class="rounded-full h-48 w-48
-                                    border-2 border-secondary mx-auto md:mx-16
-                                    mb-8 md:mb-0">
-        <div id="Skills" class="w-full md:w-1/2 md:mx-8 text-lg">
-          <h3 class="text-2xl text-secondary mb-2">Biography</h3>
-          <p>I am a self taught full stack web developer.<br>
-            I experience in Ruby, Rails, Javascript, Java, BASH scripting, SQL and Git.<br>
-            I have deployed Rails apps to various sites such as Heroku.<br>
-            I have experience using Amazon Web Services, DigitalOcean, and Linode servers using Debian-based distros such as Ubuntu.</p>
-        </div>
+      <div class="w-screen text-2xl flex flex-col flex-wrap justify-center align-center">
+      <div class="w-1/2">
+        <span class="text-secondary">Email: </span>
+        <span>konnor5456@gmail.com</span>
       </div>
-
-      <div id="jobs" class="flex flex-col mt-8 h-full
-                            md:flex-row md:overflow-hidden md:mt-16
-                            md:h-72">
-        <div class="px-2 py-1 mx-auto mb-8
-                    md:w-1/3 md:ml-auto md:mr-4 md:mb-0
-                    bg-primary-tint5 border-b-4 border-secondary border-solid">
-          <h3 class="text-xl mb-4">US Army Reserves</h3>
-          <h6 class="text-xl mb-4">68W - Combat Medic | <span class="text-sm">Dec 2012 - Present</h6>
-          <p class="text-lg">Adhered to the standards set forth by my superiors as well as performing all tasks and duties in a military manner.<br>
-          In any given scenario, render appropriate care to the patient based on best practices as outlined by the supervising MD, PA, or NP.</p>
-        </div>
-        <div class="px-2 py-1 mx-auto mb-8
-                    md:w-1/3 md:mx-4 md:mb-0 bg-primary-tint5
-                    border-b-4 border-secondary border-solid">
-          <h3 class="text-xl mb-4">Stat / Southcoast EMS</h3>
-          <h6 class="text-xl mb-4">EMT / Paramedic | <span class="text-sm"> Feb 2015 - Apr 2018 </span></h6>
-          <p class="text-lg">Under the supervision of our Medical Director and Massachusetts / Rhode Island OEMS, provide appropriate care to the injured / ill patient.<br>
-          Ensure the cleanliness of my assigned truck as well as ensuring all necessary equipment is present and accounted for.</p>
-        </div>
-        <div class="px-2 py-1 mx-auto mb-2
-                    md:w-1/3 md:mr-auto md:ml-4 md:mb-0
-                    bg-primary-tint5 border-b-4 border-secondary border-solid">
-          <h3 class="text-xl mb-4">Lifeline / Fallon EMS</h3>
-          <h6 class="text-xl mb-4">Paramedic | <span class="text-sm">Apr 2018 - Present</h6>
-          <p class="text-lg">Under the supervision of our Medical Director and Massachusetts OEMS protocols, provide the appropriate care to the injured / ill patient.<br>
-          Ensure the cleanliness of my assigned truck as well as ensuring all necessary equipment is present and accounted for.</p>
-        </div>
+      <div>
+        <span class="text-secondary">Phone number: </span>
+        <span>401-426-9151</span>
       </div>
-
+      <div>
+        <span class="text-secondary">Github profile </span>
+        <span><a href="https://github.com/ParamagicDev">https://github.com/ParamagicDev</a></span>
+      </div>
+			<div>
+        <span class="text-secondary">LinkedIn:</span>
+        <span><a href="https://www.linkedin.com/in/konnor-rogers-78b120175/">https://www.linkedin.com/in/konnor-rogers-78b120175/</a></span>
+      </div>
     </main>
 
     <footer id="main-footer" class="bg-primary-shade50 text-primary-text w-full

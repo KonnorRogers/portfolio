@@ -9,7 +9,7 @@
   <body class="items-center text-center md:text-left md:items-stretch text-primary-text
   bg-primary font-sans h-full m-0 md:overflow-visible leading-normal">
     <div class="absolute bg-center h-screen w-full bg-primary-a90 -z-1"></div>
-    <header class="fixed z-2 w-full">
+    <header class="md:hidden fixed z-2 w-full">
       <div id="menu-btn" class="absolute ease-out cursor-pointer top-2 right-2 h-8 w-8">
         <div class="btn-line"></div>
         <div class="btn-line"></div>
@@ -56,6 +56,31 @@
         </div>
       </nav>
     </header>
+    <header class="hidden md:block md:w-screen">
+      <nav class="flex bg-primary-shade20-a90 md:w-screen list-none justify-center align-center py-4">
+          <li class="mx-4">
+            <a href="/" class="hover:bg-primary-t20-a50 hover:text-secondary p-2 px-4 ease-out">
+              Home
+            </a>
+          </li>
+          <li class="mx-4">
+            <a href="about.html" class="hover:bg-primary-t20-a50 hover:text-secondary p-2 px-4 ease-out">
+              About
+            </a>
+          </li>
+          <li class="mx-4">
+            <a href="projects.html" class="hover:bg-primary-t20-a50 hover:text-secondary p-2 px-4 ease-out">
+              Projects
+            </a>
+          </li>
+          <li class="mx-4">
+            <a href="contact.html" class="hover:bg-primary-t20-a50 hover:text-secondary py-2 px-4 ease-out">
+              Contact
+            </a>
+          </li>
+      </nav>
+    </header>
+
 
     <main class="p-4 h-full md:min-h-screen-minus-50px lg:min-h-0 w-screen
     flex flex-col md:flex-row md:flex-wrap md:overflow-visible" id="projects">
@@ -64,7 +89,7 @@
       </h1>
 
       <div id="projects-info" class="w-full h-full mt-6 md:overflow-hidden
-      flex flex-wrap justify-start mx-auto md:h-3/4">
+      flex flex-wrap justify-start mx-auto">
         <div class="project">
           <a href="#">
             <img src="img/project1.jpg" alt="Project 1" class="project-img">

@@ -7,13 +7,13 @@
     <script src="https://kit.fontawesome.com/35f34fbec9.js"></script>
   </head>
   <body class="items-center text-center md:text-left md:items-stretch text-primary-text
-               bg-primary font-sans h-screen m-0 leading-normal
+               bg-primary font-sans h-full m-0 leading-normal
                bg-fixed bg-cover"
         id="bg-img" style="background: url('./img/background.jpg')">
     <div class="absolute bg-center h-screen w-screen bg-primary-a90 -z-1"></div>
-    <header class="fixed z-2 w-screen">
-        <div id="menu-btn" class="absolute ease-out cursor-pointer top-2 right-2 h-8 w-8">
-          <div class="btn-line"></div>
+    <header class="md:hidden fixed z-2 w-screen">
+        <div id="menu-btn" class="absolute ease-out cursor-pointer top-2 right-2 h-10 w-8">
+          <div class="btn-line mt-1"></div>
           <div class="btn-line"></div>
           <div class="btn-line"></div>
         </div>
@@ -58,8 +58,32 @@
         </div>
       </nav>
     </header>
+    <header class="hidden md:block md:w-screen">
+      <nav class="hidden md:flex bg-primary-shade20-a90 md:w-screen list-none justify-center align-center py-4">
+          <li class="mx-4">
+            <a href="/" class="hover:bg-primary-t20-a50 hover:text-secondary p-2 px-4 ease-out">
+              Home
+            </a>
+          </li>
+          <li class="mx-4">
+            <a href="about.html" class="hover:bg-primary-t20-a50 hover:text-secondary p-2 px-4 ease-out">
+              About
+            </a>
+          </li>
+          <li class="mx-4">
+            <a href="projects.html" class="hover:bg-primary-t20-a50 hover:text-secondary p-2 px-4 ease-out">
+              Projects
+            </a>
+          </li>
+          <li class="mx-4">
+            <a href="contact.html" class="hover:bg-primary-t20-a50 hover:text-secondary py-2 px-4 ease-out">
+              Contact
+            </a>
+          </li>
+      </nav>
+    </header>
 
-    <main class="p-16 h-screen overflow-hidden" id="home">
+    <main class="px-16 pt-16 h-full overflow-hidden" id="home">
       <h1 class="mt-20vh text-6xl mb-4 font-normal leading-none sm:text-8xl md:leading-normal">
         Konnor <span class="text-secondary">Rogers</span>
       </h1>

@@ -60,6 +60,10 @@ module.exports = {
       template: './src/projects.html',
       filename: 'projects.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/contact.html',
+      filename: 'contact.html'
+    }),
     // Extracts the css
     new MiniCssExtractPlugin({
       filename: "styles.css",

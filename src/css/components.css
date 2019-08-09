@@ -82,11 +82,11 @@
 }
 
 .btn {
-  @apply block py-2 px-4 border-0 my-1;
+  @apply block py-2 px-2 border-0 my-1;
 }
 
 .btn:hover {
-  @apply bg-secondary text-primary-text;
+  @apply ease-out bg-secondary text-primary-text;
 }
 
 .btn-dark {

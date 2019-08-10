@@ -7,8 +7,8 @@
     <script src="https://kit.fontawesome.com/35f34fbec9.js"></script>
   </head>
   <body class="items-center text-center md:text-left md:items-stretch text-primary-text
-  bg-primary font-sans h-full m-0 leading-normal">
-    <div class="absolute bg-center h-screen w-full bg-primary-a90 -z-1"></div>
+  bg-primary font-sans h-full w-screen m-0 leading-normal">
+    <div class="absolute bg-center min-h-screen-minus-50px w-full bg-primary-a90 -z-1"></div>
     <header class="md:hidden fixed z-2 w-full">
       <div id="menu-btn" class="absolute ease-out cursor-pointer top-2 right-2 h-8 w-8">
         <div class="btn-line"></div>
@@ -17,17 +17,7 @@
       </div>
 
       <nav id="menu" class="invisible h-screen w-full -z-1 top-0 fixed">
-        <div id="menu-branding" class="h-25vh float-none w-screen min-h-0 slide-left
-        flex flex-col flex-wrap invisible
-        justify-center items-center list-none
-        overflow-hidden opacity-90
-        bg-primary md:slide-up
-        md:h-full md:float-left md:w-1/2 ease-out">
-          <div id="portrait" class="w-40 h-40 md:w-64 md:h-64 rounded-full
-          border-secondary border-2 border-solid">
-          </div>
-        </div>
-        <div id="menu-nav" class="h-75vh text-2xl float-none w-screen min-h-0 slide-right font-normal
+        <div id="menu-nav" class="h-screen text-2xl float-none w-screen min-h-0 slide-right font-normal
         invisible flex flex-col flex-wrap
         justify-center items-center list-none
         overflow-hidden bg-primary-shade20-a90
@@ -56,7 +46,7 @@
         </div>
       </nav>
     </header>
-    <header class="hidden md:block md:w-screen">
+    <header class="hidden md:block md:absolute md:w-screen">
       <nav class="hidden md:flex bg-primary-shade20-a90 md:w-screen list-none justify-center align-center py-4">
           <li class="mx-4">
             <a href="/" class="hover:bg-primary-t20-a50 hover:text-secondary p-2 px-4 ease-out">
@@ -81,37 +71,45 @@
       </nav>
     </header>
 
-    <main class="p-4 h-full md:min-h-screen-minus-50px w-full
-    md:overflow-hidden
-                 flex flex-col" id="info">
-      <h1 class="w-screen text-6xl text-center font-normal leading-none md:leading-normal">
+    <main class="p-4 w-full min-h-screen-minus-50px
+    md:overflow-hidden" id="info">
+      <h1 class="w-screen text-3xl sm:text-6xl my-12 mx-auto text-center font-normal leading-none md:leading-normal">
         Contact <span class="text-secondary">Information</span>
       </h1>
 
-      <div class="w-screen text-2xl flex flex-col justify-center align-center text-center">
-        <div class="w-1/2 mx-auto text-left">
-        <div class="w-auto border-solid border-rounded-lg border-white border-2 px-8 py-2 my-4">
-          <span class="text-secondary">Email: </span>
-          <span>konnor5456@gmail.com</span>
+      <div class="text-md sm:text-xl lg:text-2xl flex flex-col flex-wrap mx-auto">
+        <div class="flex flex-col sm:flex-row flex-wrap py-2 my-4 px-4">
+          <span class="w-full sm:w-1/6 text-secondary sm:text-right pr-2">Email: </span>
+          <span class="w-full sm:w-5/6 sm:text-left">
+            <a class="hover:bg-secondary-shade20 ease-out p-2"href="mailto:konnor7414@gmail.com">konnor7414@gmail.com</a>
+          </span>
         </div>
-        <div>
-          <span class="text-secondary">Phone number: </span>
-          <span>401-426-9151</span>
+        <div class="flex flex-col sm:flex-row flex-wrap py-2 my-4 px-4">
+          <span class="w-full sm:w-1/6 text-secondary sm:text-right pr-2">Phone: </span>
+          <span class="w-full sm:w-5/6 sm:text-left">
+            <a class="hover:bg-secondary-shade20 ease-out p-2" href="tel:401-426-9151">401-426-9151</a>
+          </span>
         </div>
-        <div>
-          <span class="text-secondary">Github profile </span>
-          <span><a href="https://github.com/ParamagicDev">https://github.com/ParamagicDev</a></span>
+        <div class="flex flex-col sm:flex-row flex-wrap py-2 my-4 px-4">
+          <span class="w-full sm:w-1/6 sm:text-right text-secondary pr-2">Github: </span>
+          <span class="w-full sm:w-5/6 sm:text-left">
+            <a class="hover:bg-secondary-shade20 ease-out p-2" href="https://github.com/ParamagicDev">
+              https://github.com/ParamagicDev
+            </a>
+          </span>
         </div>
-        <div>
-          <span class="text-secondary">LinkedIn:</span>
-          <span><a href="https://www.linkedin.com/in/konnor-rogers-78b120175/">https://www.linkedin.com/in/konnor-rogers-78b120175/</a></span>
+        <div class="flex flex-col sm:flex-row flex-wrap py-2 my-4 px-4">
+          <span class="w-full sm:w-1/6 sm:text-right pr-2 text-secondary">LinkedIn:</span>
+          <span class="w-full sm:w-5/6 sm:text-left">
+            <a class="hover:bg-secondary-shade20 ease-out p-2" href="https://www.linkedin.com/in/konnor-rogers-78b120175/">
+              https://www.linkedin.com/in/konnor-rogers-78b120175/
+            </a>
+          </span>
         </div>
-      </div>
       </div>
     </main>
 
-
-    <footer id="main-footer" class="bg-primary-shade50 text-primary-text w-full
+    <footer id="main-footer" class="bg-primary-shade50 text-primary-text w-screen
     text-center h-50px py-3">
       Copyright &copy; 2019
     </footer>

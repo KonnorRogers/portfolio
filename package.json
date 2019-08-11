@@ -4,12 +4,15 @@
   "description": "",
   "private": true,
   "author": "Konnor Rogers",
+  "homepage": "konnorrogers.xyz",
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --watch --config webpack.config.js",
-    "prod": "cross-env NODE_ENV=production webpack --no-progress --config webpack.config.js"
+    "prod": "cross-env NODE_ENV=production webpack --no-progress --config webpack.config.js",
+    "deploy": "npm run prod && gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "postcss-color-mod-function": "^3.0.3"
   },
   "devDependencies": {

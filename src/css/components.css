@@ -36,19 +36,6 @@
   @apply translateX-600px;
 }
 
-/* Images */
-/* For smaller screens, use the smaller portrait img */
-#portrait {
-  background: url("./img/portrait_small.jpg");
-}
-
-/* For medium screens or larger, use the normal portrait img */
-@screen md {
-  #portrait {
-    background: url("./img/portrait.jpg");
-  }
-}
-
 /* Projects */
 .project {
   @apply w-5/6 my-2 mx-auto;
@@ -73,7 +60,7 @@
 }
 
 .project-img {
-  @apply border-white border-solid border-4;
+  @apply border-white border-solid border-4 w-full h-48;
 }
 
 .project-img:hover {

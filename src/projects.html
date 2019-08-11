@@ -56,7 +56,7 @@
         </div>
       </nav>
     </header>
-    <header class="hidden md:block md:w-screen">
+    <header class="hidden md:block absolute top-0 md:w-screen">
       <nav class="flex bg-primary-shade20-a90 md:w-screen list-none justify-center align-center py-4">
           <li class="mx-4">
             <a href="/" class="hover:bg-primary-t20-a50 hover:text-secondary p-2 px-4 ease-out">
@@ -82,77 +82,88 @@
     </header>
 
 
-    <main class="p-4 h-full md:min-h-screen-minus-50px lg:min-h-0 w-screen
-    flex flex-col md:flex-row md:flex-wrap md:overflow-visible" id="projects">
-      <h1 class="w-full text-6xl text-center font-normal leading-none md:leading-normal">
+    <main class="p-4 h-full md:min-h-screen-minus-50px w-screen
+    flex flex-col md:flex-row md:flex-wrap md:overflow-visible md:pt-16" id="projects">
+      <h1 class="text-6xl w-full text-center font-normal leading-none md:leading-normal" >
         <span class="text-secondary">Projects</span>
       </h1>
 
-      <div id="projects-info" class="w-full h-full mt-6 md:overflow-hidden
-      flex flex-wrap justify-start mx-auto">
+      <div id="projects-info" class="w-full pt-6
+      flex flex-wrap h-full justify-start mx-auto">
         <div class="project">
-          <a href="#">
-            <img src="img/project1.jpg" alt="Project 1" class="project-img">
+          <a href="https://github.com/ParamagicDev/vps_cli">
+            <img src="img/vps-cli.jpg" alt="VpsCli picture" class="project-img">
           </a>
-          <a class="btn btn-light" href="#">
-            <i class="fas fa-eye px-2"></i>Project
+          <a class="btn btn-light" href="https://github.com/ParamagicDev/vps_cli">
+            <i class="fas fa-eye px-2"></i>VpsCLI
           </a>
-          <a class="btn btn-dark" href="#">
+          <a class="btn btn-dark" href="https://github.com/ParamagicDev/vps_cli">
             <i class="fab fa-github px-2"></i>Source Code
           </a>
         </div>
         <div class="project">
-          <a href="#">
-            <img src="img/project2.jpg" alt="Project 2" class="project-img">
+          <a href="https://github.com/ParamagicDev/vps_setup">
+            <img src="img/vps-setup.jpg" alt="VpsSetup picture" class="project-img">
           </a>
-          <a class="btn btn-light" href="#">
-            <i class="fas fa-eye px-2"></i>Project
+          <a class="btn btn-light" href="https://github.com/ParamagicDev/vps_setup">
+            <i class="fas fa-eye px-2"></i>VpsSetup
           </a>
-          <a class="btn btn-dark" href="#">
-            <i class="fab fa-github px-2"></i>Source Code
-          </a>
-        </div>
-
-        <div class="project">
-          <a href="#">
-            <img src="img/project3.jpg" alt="Project 3"
-                                        class="project-img">
-          </a>
-          <a class="btn btn-light" href="#">
-            <i class="fas fa-eye px-2"></i>Project
-          </a>
-          <a class="btn btn-dark" href="#">
-            <i class="fab fa-github px-2"></i>Source Code
-          </a>
-        </div>
-        <div class="project">
-          <a href="#">
-            <img src="img/project4.jpg" alt="Project 4"
-                                        class="project-img">
-          </a>
-          <a class="btn btn-light" href="#">
-            <i class="fas fa-eye px-2"></i>Project
-          </a>
-          <a class="btn btn-dark" href="#">
+          <a class="btn btn-dark" href="https://github.com/ParamagicDev/vps_setup">
             <i class="fab fa-github px-2"></i>Source Code
           </a>
         </div>
 
         <div class="project">
-          <a href="#">
-            <img src="./img/project5.jpg" alt="Project 5" class="project-img">
+          <a href="https://paramagic-facebook.herokuapp.com">
+            <img src="img/paramagic-book.png" alt="Paramagic Book image"
+                                        class="project-img">
           </a>
-          <a class="btn btn-light" href="#">
-            <i class="fas fa-eye px-2"></i>Project
+          <a class="btn btn-light" href="https://paramagic-facebook.herokuapp.com">
+            <i class="fas fa-eye px-2"></i>ParamagicBook
           </a>
-          <a class="btn btn-dark" href="#">
+          <a class="btn btn-dark" href="https://github.com/ParamagicDev/odin-facebook">
+            <i class="fab fa-github px-2"></i>Source Code
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://rails-sample-app-paramagicdev.herokuapp.com">
+            <img src="img/rails-sample-app.png" alt="Rails Sample App image"
+                                        class="project-img">
+          </a>
+          <a class="btn btn-light" href="https://rails-sample-app-paramagicdev.herokuapp.com">
+            <i class="fas fa-eye px-2"></i>Rails Sample App
+          </a>
+          <a class="btn btn-dark" href="https://github.com/ParamagicDev/rails_sample_app">
+            <i class="fab fa-github px-2"></i>Source Code
+          </a>
+        </div>
+
+        <div class="project">
+          <a href="https://immense-mesa-98857.herokuapp.com/mastermind">
+            <img src="img/mastermind.png" alt="Web Guesser image" class="project-img">
+          </a>
+          <a class="btn btn-light" href="https://immense-mesa-98857.herokuapp.com/mastermind">
+            <i class="fas fa-eye px-2"></i>Web Guesser
+          </a>
+          <a class="btn btn-dark" href="https://github.com/ParamagicDev/web_guesser">
+            <i class="fab fa-github px-2"></i>Source Code
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://github.com/ParamagicDev/paramagic_chess">
+            <img src="img/chess.png" alt="Chess image" class="project-img">
+          </a>
+          <a class="btn btn-light" href="https://github.com/ParamagicDev/paramagic_chess">
+            <i class="fas fa-eye px-2"></i>Chess
+          </a>
+          <a class="btn btn-dark" href="https://github.com/ParamagicDev/paramagic_chess">
             <i class="fab fa-github px-2"></i>Source Code
           </a>
         </div>
       </div>
     </main>
 
-    <footer id="main-footer" class="bg-primary-shade50 text-primary-text w-full
+    <footer id="main-footer" class="bg-primary-shade20-a90 text-primary-text w-full
     text-center h-50px py-3">
       Copyright &copy; 2019
     </footer>

@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "author": "Konnor Rogers",
-  "homepage": "konnorrogers.xyz",
+  "homepage": "https://paramagicdev.github.io/portfolio",
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --watch --config webpack.config.js",

@@ -2,8 +2,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#444',
-        'secondary': '#eece1a',
+        // 'primary': '#444',
+        'primary': '#5B618A',
+        'secondary': '#4fd1c5',
+        // 'secondary': '#eece1a',
         'primary-text': '#fff'
       },
       fontSize: {

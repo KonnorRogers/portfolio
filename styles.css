@@ -526,6 +526,34 @@ img {
   height: auto;
 }
 
+/* Uses the color-mod-function postcss plugin */
+
+.bg-primary-t20-a50 {
+  background: rgba(124, 129, 161, 0.5);
+}
+
+/* Uses the color-mod-function postcss plugin */
+
+.hover\:bg-primary-t20-a50:hover {
+  background: rgba(124, 129, 161, 0.5);
+}
+
+.hover\:bg-secondary-shade20:hover {
+  background: rgb(63, 167, 158);
+}
+
+.bg-primary-a90 {
+  background: rgba(91, 97, 138, 0.9);
+}
+
+.bg-primary-shade20-a90 {
+  background: rgba(73, 78, 110, 0.9);
+}
+
+.bg-primary-tint5 {
+  background: rgb(99, 105, 144);
+}
+
 .rotate-180 {
   transform: rotate(180deg);
 }
@@ -633,6 +661,23 @@ img {
   margin-right: auto;
 }
 
+.description {
+  height: 8rem;
+  padding-left: 0.5rem;
+  border-color: #4fd1c5;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-style: solid;
+  font-weight: 500;
+  background: rgba(124, 129, 161, 0.3);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 640px) {
   .project {
     width: 50%;
@@ -646,6 +691,10 @@ img {
 @media (min-width: 768px) {
   .project {
     width: 33.333333%;
+  }
+
+  .description {
+    height: 11rem;
   }
 }
 
@@ -707,6 +756,9 @@ img {
 .btn-light {
   color: #000;
   background: rgb(173, 176, 197);
+}
+
+.description {
 }
 
 .slide-left.visible, .slide-right.visible, .slide-down.visible,
@@ -792,16 +844,8 @@ img {
   border-color: transparent;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .border-solid {
   border-style: solid;
-}
-
-.border-2 {
-  border-width: 2px;
 }
 
 .border-b-4 {
@@ -874,10 +918,6 @@ img {
   height: 2.5rem;
 }
 
-.h-40 {
-  height: 10rem;
-}
-
 .h-full {
   height: 100%;
 }
@@ -888,14 +928,6 @@ img {
 
 .h-50px {
   height: 50px;
-}
-
-.h-75vh {
-  height: 75vh;
-}
-
-.h-25vh {
-  height: 25vh;
 }
 
 .leading-none {
@@ -1130,10 +1162,6 @@ img {
   width: 2rem;
 }
 
-.w-40 {
-  width: 10rem;
-}
-
 .w-full {
   width: 100%;
 }
@@ -1164,34 +1192,6 @@ img {
 
 .rotate-menu div:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -8px);
-}
-
-/* Uses the color-mod-function postcss plugin */
-
-.bg-primary-t20-a50 {
-  background: rgba(124, 129, 161, 0.5);
-}
-
-/* Uses the color-mod-function postcss plugin */
-
-.hover\:bg-primary-t20-a50:hover {
-  background: rgba(124, 129, 161, 0.5);
-}
-
-.hover\:bg-secondary-shade20:hover {
-  background: rgb(63, 167, 158);
-}
-
-.bg-primary-a90 {
-  background: rgba(91, 97, 138, 0.9);
-}
-
-.bg-primary-shade20-a90 {
-  background: rgba(73, 78, 110, 0.9);
-}
-
-.bg-primary-tint5 {
-  background: rgb(99, 105, 144);
 }
 
 @media (min-width: 640px) {
@@ -1457,14 +1457,6 @@ img {
     align-items: stretch;
   }
 
-  .md\:float-left {
-    float: left;
-  }
-
-  .md\:h-64 {
-    height: 16rem;
-  }
-
   .md\:h-full {
     height: 100%;
   }
@@ -1536,10 +1528,6 @@ img {
 
   .md\:focus\:text-transparent:focus {
     color: transparent;
-  }
-
-  .md\:w-64 {
-    width: 16rem;
   }
 
   .md\:w-1\/2 {

@@ -25,6 +25,10 @@
   background: color-mod(theme('colors.primary') shade(50%));
 }
 
-.bg-secondary-shade20 {
-  background: color-mod(theme('colors.secondary') shade(20%));
+.bg-secondary-shade20-a50 {
+  background: color-mod(theme('colors.secondary') shade(20%) a(50%));
+}
+
+.bg-primary-t20-a30 {
+  background: color-mod(theme('colors.primary') tint(20%) a(30%));
 }

@@ -1,4 +1,5 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -23,6 +24,13 @@ module.exports = {
         test: /\.css$/,
         exclude: /node_modules/,
         use: [
+          {
+            // Extracts the css, supports hot module reloading via hmr
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: process.env.NODE_ENV === 'development',
+            },
+          },
           {
             loader: 'style-loader',
           },

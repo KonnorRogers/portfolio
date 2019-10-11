@@ -129,7 +129,6 @@ img {
 
 button,
 input,
-select,
 textarea {
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
@@ -152,8 +151,7 @@ input { /* 1 */
  * 1. Remove the inheritance of text transform in Firefox.
  */
 
-button,
-select { /* 1 */
+button { /* 1 */
   text-transform: none;
 }
 
@@ -328,6 +326,8 @@ html {
 h1,
 h2,
 h3,
+h4,
+h5,
 h6,
 p,
 pre {
@@ -395,6 +395,10 @@ html {
   border-color: #e2e8f0;
 }
 
+/*
+ * Ensure horizontal rules are visible by default
+ */
+
 /**
  * Undo the `border-style: none` reset that Normalize applies to images so that
  * our `border-{width}` utilities have the expected effect.
@@ -415,32 +419,27 @@ textarea {
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.5;
+  color: #a0aec0;
 }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-  color: inherit;
-  opacity: 0.5;
+  color: #a0aec0;
 }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: inherit;
-  opacity: 0.5;
+  color: #a0aec0;
 }
 
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
-  color: inherit;
-  opacity: 0.5;
+  color: #a0aec0;
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: inherit;
-  opacity: 0.5;
+  color: #a0aec0;
 }
 
 button,
@@ -455,6 +454,8 @@ table {
 h1,
 h2,
 h3,
+h4,
+h5,
 h6 {
   font-size: inherit;
   font-weight: inherit;
@@ -480,7 +481,6 @@ a {
 
 button,
 input,
-select,
 textarea {
   padding: 0;
   line-height: inherit;
@@ -552,6 +552,34 @@ img {
 
 .bg-primary-tint5 {
   background: rgb(99, 105, 144);
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
 }
 
 .rotate-180 {
@@ -844,8 +872,16 @@ img {
   border-color: transparent;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .border-solid {
   border-style: solid;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-b-4 {
@@ -858,6 +894,10 @@ img {
 
 .block {
   display: block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -890,6 +930,10 @@ img {
 
 .justify-center {
   justify-content: center;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
 }
 
 .float-none {
@@ -998,6 +1042,10 @@ img {
   opacity: .9;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1065,6 +1113,46 @@ img {
   padding-top: 4rem;
 }
 
+.placeholder-transparent::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.placeholder-transparent::-moz-placeholder {
+  color: transparent;
+}
+
+.placeholder-transparent:-ms-input-placeholder {
+  color: transparent;
+}
+
+.placeholder-transparent::-ms-input-placeholder {
+  color: transparent;
+}
+
+.placeholder-transparent::placeholder {
+  color: transparent;
+}
+
+.focus\:placeholder-transparent:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.focus\:placeholder-transparent:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.focus\:placeholder-transparent:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.focus\:placeholder-transparent:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.focus\:placeholder-transparent:focus::placeholder {
+  color: transparent;
+}
+
 .fixed {
   position: fixed;
 }
@@ -1077,13 +1165,20 @@ img {
   position: relative;
 }
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-}
-
 .top-0 {
   top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
 }
 
 .top-2 {
@@ -1291,6 +1386,46 @@ img {
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:placeholder-transparent::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  .sm\:placeholder-transparent::-moz-placeholder {
+    color: transparent;
+  }
+
+  .sm\:placeholder-transparent:-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .sm\:placeholder-transparent::-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .sm\:placeholder-transparent::placeholder {
+    color: transparent;
+  }
+
+  .sm\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  .sm\:focus\:placeholder-transparent:focus::-moz-placeholder {
+    color: transparent;
+  }
+
+  .sm\:focus\:placeholder-transparent:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .sm\:focus\:placeholder-transparent:focus::-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .sm\:focus\:placeholder-transparent:focus::placeholder {
+    color: transparent;
   }
 
   .sm\:text-left {
@@ -1510,6 +1645,46 @@ img {
     padding-top: 4rem;
   }
 
+  .md\:placeholder-transparent::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  .md\:placeholder-transparent::-moz-placeholder {
+    color: transparent;
+  }
+
+  .md\:placeholder-transparent:-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .md\:placeholder-transparent::-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .md\:placeholder-transparent::placeholder {
+    color: transparent;
+  }
+
+  .md\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  .md\:focus\:placeholder-transparent:focus::-moz-placeholder {
+    color: transparent;
+  }
+
+  .md\:focus\:placeholder-transparent:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .md\:focus\:placeholder-transparent:focus::-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .md\:focus\:placeholder-transparent:focus::placeholder {
+    color: transparent;
+  }
+
   .md\:absolute {
     position: absolute;
   }
@@ -1643,6 +1818,46 @@ img {
     padding-bottom: 2rem;
   }
 
+  .lg\:placeholder-transparent::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  .lg\:placeholder-transparent::-moz-placeholder {
+    color: transparent;
+  }
+
+  .lg\:placeholder-transparent:-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .lg\:placeholder-transparent::-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .lg\:placeholder-transparent::placeholder {
+    color: transparent;
+  }
+
+  .lg\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  .lg\:focus\:placeholder-transparent:focus::-moz-placeholder {
+    color: transparent;
+  }
+
+  .lg\:focus\:placeholder-transparent:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .lg\:focus\:placeholder-transparent:focus::-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .lg\:focus\:placeholder-transparent:focus::placeholder {
+    color: transparent;
+  }
+
   .lg\:text-transparent {
     color: transparent;
   }
@@ -1753,6 +1968,46 @@ img {
 
   .xl\:focus\:border-transparent:focus {
     border-color: transparent;
+  }
+
+  .xl\:placeholder-transparent::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  .xl\:placeholder-transparent::-moz-placeholder {
+    color: transparent;
+  }
+
+  .xl\:placeholder-transparent:-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .xl\:placeholder-transparent::-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .xl\:placeholder-transparent::placeholder {
+    color: transparent;
+  }
+
+  .xl\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  .xl\:focus\:placeholder-transparent:focus::-moz-placeholder {
+    color: transparent;
+  }
+
+  .xl\:focus\:placeholder-transparent:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .xl\:focus\:placeholder-transparent:focus::-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .xl\:focus\:placeholder-transparent:focus::placeholder {
+    color: transparent;
   }
 
   .xl\:text-transparent {

@@ -1,79 +1,31 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-
-const path = require('path')
+const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
-  mode: process.env.NODE_ENV,
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
-  },
   module: {
     rules: [
       {
         test: /\.css$/,
-        exclude: /node_modules/,
-        use: [ 
-          {
-            // Extracts the css, supports hot module reloading via hmr
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: process.env.NODE_ENV === 'development',
-            },
-          },
-          // loads css normally
-          { loader: 'css-loader', options: { importLoaders: 1 } },
-          // loads css via postcss
-          'postcss-loader'
-        ],
+        use: ['style-loader', 'postcss-loader'],
       },
       {
-        test: /\.(png|jpe?g|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: './img/[name].[ext]',
-            },
-          },
-        ],
+        test: /\.jsx?$/,
+        use: ['babel-loader', 'astroturf/loader'],
       },
     ],
   },
-  plugins: [
-    // cleans out the dist/ directory for production
-    new CleanWebpackPlugin(),
 
-    // generates a new HTML file @ dist/index.html
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-      filename: 'index.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/about.html',
-      filename: 'about.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/projects.html',
-      filename: 'projects.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/contact.html',
-      filename: 'contact.html'
-    }),
-    // Extracts the css
-    new MiniCssExtractPlugin({
-      filename: "styles.css",
-      chunkFilename: "styles.css"
-    }),
-  ],
-  
-  // Used for webpack-dev-server
+  entry: './src/index.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
+  },
+
   devServer: {
-    contentBase: path.resolve(__dirname, "dist"),
-    watchContentBase: true
-  }
-}
+    publicPath: '',
+    contentBase: path.resolve(__dirname, 'dist'),
+    watchContentBase: true,
+    compress: true,
+    port: 8080,
+    open: true,
+  },
+};

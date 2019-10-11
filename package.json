@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "My simple portfolio.",
-  "main": "./src/index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server"
@@ -18,11 +18,23 @@
   },
   "homepage": "https://github.com/ParamagicDev/portfolio#readme",
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "astroturf": "^0.9.20",
+    "autoprefixer": "^9.6.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
     "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
+    "html-webpack-plugin": "^3.2.0",
+    "postcss": "^7.0.18",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.1.2",
+    "style-loader": "^1.0.0",
     "tailwindcss": "^1.1.2",
     "webpack": "^4.41.0",
-    "webpack-cli": "^3.3.9"
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
   }
 }

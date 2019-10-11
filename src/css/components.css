@@ -1,0 +1,104 @@
+@responsive {
+  .min-h-screen-minus-50px {
+    min-height: calc(100vh - 50px);
+  }
+
+  .h-screen-minus-50px {
+    height: calc(100vh - 50px);
+  }
+}
+
+.ease-out {
+  /* <property>  <duration> <timing-func> <delay>*/
+  transition: all 0.5s ease-out;
+}
+
+/* Icons */
+.icon-link {
+  @apply p-2;
+}
+
+.icon-link:hover {
+  @apply text-secondary ease-out;
+}
+
+
+/* Navigation */
+.nav-link {
+  @apply uppercase inline-block relative text-2xl py-4 px-0 font-light ease-out;
+}
+
+.nav-link:hover {
+  @apply text-secondary;
+}
+
+.nav-item {
+  @apply translateX-600px;
+}
+
+/* Projects */
+.project {
+  @apply w-5/6 my-2 mx-auto;
+}
+
+.description {
+  @apply h-32 pl-2 border-secondary border-t-2 border-b-2 border-solid font-medium;
+  @apply bg-primary-t20-a30 my-2 flex content-center justify-center items-center;
+}
+@screen sm {
+  .project {
+    @apply w-1/2 mx-0 px-4;
+  }
+
+}
+
+@screen md {
+  .project {
+    @apply w-1/3;
+  }
+
+  .description {
+    @apply h-44;
+  }
+}
+
+@screen lg {
+  .project {
+    @apply w-1/4;
+  }
+}
+
+.project-img {
+  @apply border-white border-solid border-4 w-full h-48;
+}
+
+.project-img:hover {
+  @apply ease-out border-secondary opacity-50;
+}
+
+/* Buttons */
+.btn-line {
+  @apply w-8 h-tiny bg-primary-text mb-2 ease-out;
+}
+
+.btn {
+  @apply block py-2 px-2 border-0 my-1;
+}
+
+.btn:hover {
+  @apply ease-out bg-secondary text-primary-text;
+}
+
+.btn-dark {
+  @apply text-white;
+  background: color-mod(theme('colors.primary') shade(50%));
+}
+
+.btn-light {
+  @apply text-black;
+  background: color-mod(theme('colors.primary') tint(50%));
+}
+
+
+.description {
+}

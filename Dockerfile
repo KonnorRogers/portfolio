@@ -4,25 +4,20 @@ RUN apk add --no-cache --virtual \
     #
     # required
     nodejs yarn \
+    tzdata build-base libffi-dev \
     #
     # nice to haves
     curl git \
     #
     # Fixes watch file isses with things like HMR
     libnotify-dev \
-    #
-    # fixes timezone issues
-    tzdata \
-    #
-    #
-    libffi-dev autoconf
 
 FROM builder as bridgetownrb-app
 
 # This is to fix an issue on Linux with permissions issues
 # ARG USER_ID=${USER_ID:-1000}
 # ARG GROUP_ID=${GROUP_ID:-1000}
-# ARG USERNAME=${USERNAME:-user}
+# ARG DOCKER_USER=${DOCKER_USER:-user}
 # ARG APP_DIR=${APP_DIR:-/home/$USER/bridgetown-app}
 
 ARG USER_ID=$USER_ID
@@ -46,6 +41,7 @@ WORKDIR $APP_DIR
 
 # COPY is run as a root user, not as the USER defined above, so we must chown it
 COPY --chown=$USER_ID:$GROUP_ID Gemfile* $APP_DIR/
+COPY Gemfile* $APP_DIR/
 RUN gem install bundler
 RUN bundle install
 

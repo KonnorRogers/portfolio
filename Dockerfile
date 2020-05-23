@@ -10,7 +10,7 @@ RUN apk add --no-cache --virtual \
     curl git \
     #
     # Fixes watch file isses with things like HMR
-    libnotify-dev \
+    libnotify-dev
 
 FROM builder as bridgetownrb-app
 

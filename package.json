@@ -1,0 +1,10 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio project",
+  "main": "index.js",
+  "repository": "git@github.com:ParamagicDev/portfolio.git",
+  "author": "paramagicdev <konnor5456@gmail.com>",
+  "license": "MIT",
+  "private": true
+}

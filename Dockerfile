@@ -1,15 +1,21 @@
 FROM ruby:2.6-alpine3.11 as builder
 
-RUN set -eux; \
-    apk add --no-cache --virtual \
+RUN apk add --no-cache --virtual \
+    #
     # required
     nodejs yarn \
+    #
     # nice to haves
-    vim curl git \
+    curl git \
+    #
     # Fixes watch file isses with things like HMR
     libnotify-dev \
+    #
     # fixes timezone issues
-    tzdata
+    tzdata \
+    #
+    #
+    libffi-dev autoconf
 
 FROM builder as bridgetownrb-app
 
@@ -25,8 +31,8 @@ ARG DOCKER_USER=$DOCKER_USER
 ARG APP_DIR=$APP_DIR
 
 # Create a non-root user
-RUN groupadd --gid $GROUP_ID $USERNAME
-RUN useradd --no-log-init --uid $USER_ID --gid $GROUP_ID $USERNAME --create-home
+RUN addgroup -g $GROUP_ID -S $GROUP_ID
+RUN adduser --disabled-password -G $GROUP_ID --uid $USER_ID -S $DOCKER_USER
 
 # Create and then own the directory to fix permissions issues
 RUN mkdir -p $APP_DIR
@@ -44,9 +50,9 @@ RUN gem install bundler
 RUN bundle install
 
 # For webpacker / node_modules
-# COPY --chown=$USER_ID:$GROUP_ID package.json $APP_DIR
-# COPY --chown=$USER_ID:$GROUP_ID yarn.lock $APP_DIR
+COPY --chown=$USER_ID:$GROUP_ID package.json $APP_DIR
+COPY --chown=$USER_ID:$GROUP_ID yarn.lock $APP_DIR
 
-# RUN yarn install
+RUN yarn install
 
 CMD ["yarn", "start"]

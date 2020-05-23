@@ -3,7 +3,7 @@ FROM ruby:2.6-alpine3.11 as builder
 RUN apk add --no-cache --virtual \
     #
     # required
-    nodejs yarn \
+    nodejs-dev yarn \
     tzdata build-base libffi-dev \
     #
     # nice to haves

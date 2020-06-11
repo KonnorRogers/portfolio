@@ -1,4 +1,6 @@
 source "https://rubygems.org"
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
 # Hello! This is where you manage which Bridgetown version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Bridgetown with `bundle exec`, like so:
@@ -14,5 +16,4 @@ source "https://rubygems.org"
 #
 # Happy Bridgetowning!
 
-gem "bridgetown", "~> 0.14.0"
-
+gem "bridgetown", "~> 0.15.0.beta3"

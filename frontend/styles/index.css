@@ -1,24 +1,24 @@
 @import "tailwindcss/base";
-
-body {
-  @apply text-gray-700 bg-gray-200;
-  font-family: sans-serif;
-}
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 h1,
 nav,
 footer {
-  text-align: center;
+  @apply text-center;
 }
 
 main {
-  margin: 4rem auto;
+  @apply my-16 mx-auto;
   max-width: 60rem;
 }
 
 a {
-  @apply text-indigo-500;
+  @apply inline-block text-indigo-500;
+  margin-bottom: 2px;
 }
 
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+a:hover,
+a:focus {
+  @apply mb-0 border-b-2 border-indigo-500 border-solid;
+}

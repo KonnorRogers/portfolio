@@ -7,7 +7,9 @@ RUN apk add --no-cache --virtual \
     curl git \
     #
     # nice to haves
-    libnotify-dev vim
+    libnotify-dev vim \
+    # For Cypress
+    xvfb gtk+2.0-dev
 
 FROM builder as bridgetownrb-app
 

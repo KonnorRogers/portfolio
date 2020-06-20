@@ -1,0 +1,24 @@
+@import "tailwindcss/base";
+
+body {
+  @apply text-gray-700 bg-gray-200;
+  font-family: sans-serif;
+}
+
+h1,
+nav,
+footer {
+  text-align: center;
+}
+
+main {
+  margin: 4rem auto;
+  max-width: 60rem;
+}
+
+a {
+  @apply text-indigo-500;
+}
+
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";

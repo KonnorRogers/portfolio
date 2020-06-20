@@ -48,21 +48,10 @@ module.exports = {
         },
       },
       {
-        test: /.(s[ac]|c)ss$/,
+        test: /.css$/,
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader",
-          {
-            loader: "sass-loader",
-            options: {
-              sassOptions: {
-                includePaths: [
-                  path.resolve(__dirname, "src/_components"),
-                  path.resolve(__dirname, "src/_includes"),
-                ],
-              },
-            },
-          },
           {
             loader: "postcss-loader",
             options: {

@@ -1,0 +1,54 @@
+ma_protocol_rewrite:
+  source_code: https://github.com/ParamagicDev/ma-protocol-rewrite/tree/master
+  deployed_app: https://inspiring-varahamihira-efb922.netlify.app/
+  description: ->
+    A rewrite of EMS protocols for the state of Massachusetts. The app
+    is written in React / Gatsby and attempts to created a more
+    navigable and searchable interface for reading the protocols. This is the
+    current project im working on.
+
+paramagic_book:
+  source_code: https://github.com/ParamagicDev/odin-facebook
+  deployed_app: https://paramagic-app.herokuapp.com/signup
+  description: ->
+    A Ruby on Rails website created to mimic the functionality of
+    Facebook. It includes things such as OAuth authentication via
+    Facebook, authentication via Devise, PostgresQL database and
+    deployed via Heroku.
+
+flight_booker:
+  source_code: https://github.com/ParamagicDev/odin-flight-booker
+  deployed_app: https://github.com/ParamagicDev/odin-flight-booker
+  description: ->
+    A Ruby on Rails website created to go through booking a flight. It
+    uses things such as nested_attributes to make submitting forms
+    easier. It also uses PostgresQL as the database and is deployed via
+    Heroku.
+
+sinatra_mind:
+  source_code: https://github.com/ParamagicDev/sinatra_mind
+  deployed_app: https://immense-mesa-98857.herokuapp.com/mastermind
+  description: ->
+    A game of
+    <a href="https://en.wikipedia.org/wiki/Mastermind_(board_game)">
+    Mastermind
+    </a>
+    written using Sinatra & Ruby and deployed via Heroku. You have 12
+    guesses to get the correct colors in the correct order.
+
+kubs_cli:
+  source_code: https://github.com/ParamagicDev/kubs_cli
+  description: ->
+    My custom built solution to handling `dotfiles` as well as other
+    various configuration items when using a new computer. It handles
+    things like installing base dependencies as well as packages for
+    things like `npm`, `ruby`, etc.
+
+paramagic_chess:
+  source_code: https://github.com/ParamagicDev/paramagic_chess
+  description: ->
+    A game of Chess implemented in Ruby for the command line. The
+    project has a full testing suite using Rspec. It implements various
+    moves such as "en passant", "castling", and double-moving a pawn on
+    the first turn as well as all the other basic functionalities of
+    chess.

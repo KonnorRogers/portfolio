@@ -5,12 +5,7 @@
   </head>
   {%- assign body_styles = "text-gray-700 bg-gray-200 font-sans" %}
   <body class="{{ page.layout }} {{ page.page_class }} {{ body_styles }}">
-    {% render "navbar", metadata: site.metadata, page: page %}
-
-    <main>
-      {{ content }}
-    </main>
-
+    {{ content }}
     {% render "footer", metadata: site.metadata %}
   </body>
 </html>

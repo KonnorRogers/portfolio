@@ -1,5 +1,17 @@
-<nav class="mt-4">
-  <a class="mx-4 px-2" href="/">Home</a>
-  <a class="mx-4 px-2" href="/about">About</a>
-  <a class="mx-4 px-2" href="/posts">Posts</a>
+---
+variables:
+  outline: [boolean, Whether or not to outline each link]
+---
+
+{%- if outline %}
+  {%- assign nav-style =
+  " px-4 py-1 text-gray-700 border-2 border-teal-400 rounded-lg shadow-lg
+  hover:bg-gray-300 hover:text-gray-800"
+  %}
+{%- endif %}
+
+<nav class="mt-4 text-lg">
+  <a href="/"      class="px-2 mx-4{{nav-style}}"> Home </a>
+  <a href="/about" class="px-2 mx-4{{nav-style}}"> About </a>
+  <a href="/posts" class="px-2 mx-4{{nav-style}}"> Posts</a>
 </nav>

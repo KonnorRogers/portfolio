@@ -4,7 +4,13 @@ module.exports = {
     content: ["./src/**/*.html"],
   },
   theme: {
-    extend: {},
+    extend: {
+      zIndex: {
+        "-10": "-10",
+        "-20": "-20",
+        "-30": "-30",
+      },
+    },
   },
   variants: {},
   plugins: [],

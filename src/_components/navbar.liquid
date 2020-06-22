@@ -6,11 +6,11 @@ variables:
 {%- if outline %}
   {%- assign nav-style =
   " px-4 py-1 text-gray-700 border-2 border-teal-400 rounded-lg shadow-lg
-  hover:bg-gray-300 hover:text-gray-800"
+  hover:bg-gray-300 hover:text-gray-800 focus:bg-gray-300 focus:text-gray-800"
   %}
 {%- endif %}
 
-<nav class="mt-4 text-lg">
+<nav data-controller="navbar" class="relative my-4 text-lg">
   <a href="/"      class="px-2 mx-4{{nav-style}}"> Home </a>
   <a href="/about" class="px-2 mx-4{{nav-style}}"> About </a>
   <a href="/posts" class="px-2 mx-4{{nav-style}}"> Posts</a>

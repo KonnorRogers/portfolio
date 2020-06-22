@@ -2,12 +2,7 @@
 layout: default
 ---
 
-<main class="bg-gray-200 shadow-2xl">
-  <h1 class="text-4xl font-bold text-black-600">Hi!</h1>
-  <p>
-    My name is {{ site.data.info.first_name }}
-    <span> {{ site.data.info.last_name }} </span>
-  </p>
+<main class="my-8">
   {{ content }}
 
   {% render "navbar", outline: true %}

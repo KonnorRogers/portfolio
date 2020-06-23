@@ -4,9 +4,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.metadata.myvariable }}.
 
-title: Konnor's Portfolio
+title: Konnor's Personal Site
 tagline: Web Developer
 email: konnor7414@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A site about Konnor Rogers which includes his blog, projects he's worked
+  A site about Konnor Rogers which includes his blog, projects he's worked on
   and various other items!

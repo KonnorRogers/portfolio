@@ -1,17 +1,25 @@
 ---
 variables:
-  outline: [boolean, Whether or not to outline each link]
+  home: [boolean, If its the home page or not]
 ---
 
-{%- if outline %}
-  {%- assign nav-style =
-  " px-4 py-1 text-gray-700 border-2 border-teal-400 rounded-lg shadow-lg
+{%- if home %}
+  {%- assign home-style =
+  "text-gray-700 border-2 border-teal-400 shadow-lg
   hover:bg-gray-300 hover:text-gray-800 focus:bg-gray-300 focus:text-gray-800"
   %}
 {%- endif %}
 
+{% assign base-style =
+  "px-4 py-1 mx-4 rounded-md
+  hover:bg-gray-200 hover:text-gray-800 focus:bg-gray-200 focus:text-gray-800"
+%}
+
 <nav data-controller="navbar" class="relative my-4 text-lg">
-  <a href="/"      class="px-2 mx-4{{nav-style}}"> Home </a>
-  <a href="/about" class="px-2 mx-4{{nav-style}}"> About </a>
-  <a href="/posts" class="px-2 mx-4{{nav-style}}"> Posts</a>
+  {%- if home == false %}
+    <a href="/"    class="{{base-style}} {{home-style}}"> Home </a>
+  {%- endif %}
+
+  <a href="/about" class="{{base-style}} {{home-style}}"> About </a>
+  <a href="/posts" class="{{base-style}} {{home-style}}"> Posts</a>
 </nav>

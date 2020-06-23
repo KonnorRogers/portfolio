@@ -8,13 +8,17 @@ layout: home
 {:.text-4xl .font-bold .text-gray-800}
 
 My name is Konnor.
-{:.text-2xl .text-gray-700 .text-center}
+{:.text-2xl .text-gray-700}
+
+I am currently open to both full-time and contract opportunities.
+{:.text-md .w-1/2 .mt-2 .mx-auto}
 
 I build websites using a variety of different technologies including Ruby on Rails and React.
-{:.text-lg .text-center .w-1/2 .my-8 .mx-auto}
+{:.text-xl .text-center .w-1/2 .mb-8 .mt-0 .rounded-lg .px-4 .py-2 .text-gray-700 .mx-auto}
 
-<a href="projects" class="px-4 text-green-800 bg-green-200 border-2 border-green-800 border-solid rounded-lg hover:border-2 hover:border-green-800 hover:border-solid">
+<a href="projects" class="px-4 py-2 text-lg text-green-800 bg-green-200 border-2 border-transparent border-solid rounded-lg hover:bg-green-100 hover:border-green-800 hover:border-solid focus:border-green-800 focus:border-solid">
   View my work
-  <i class="fas fa-long-arrow-alt-right"></i>
+  <i class="pl-2 fas fa-long-arrow-alt-right"></i>
 </a>
-{:.w-1/2 .px-0 .pb-12 .mx-auto .-my-2}
+{:.w-1/2 .px-0 .pb-12 .mx-auto .text-center .-my-2}
+

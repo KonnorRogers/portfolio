@@ -9,7 +9,9 @@
   </head>
   {%- assign body_styles = "min-h-screen text-gray-700 bg-gray-300 font-sans" %}
   <body class="{{ page.layout }} {{ page.page_class }} {{ body_styles }}">
-    {{ content }}
+    <div style="min-height: calc(100vh - 3rem);">
+      {{ content }}
+    </div>
     {% render "footer", metadata: site.metadata %}
   </body>
 </html>

@@ -8,6 +8,8 @@ variables:
   "text-gray-700 border-2 border-teal-400 shadow-lg
   hover:bg-gray-300 hover:text-gray-800 focus:bg-gray-300 focus:text-gray-800"
   %}
+{% else %}
+  {% assign fixed-style = "fixed flex items-center justify-center w-screen bg-gray-300 top-0" %}
 {%- endif %}
 
 {% assign base-style =
@@ -15,7 +17,7 @@ variables:
   hover:bg-gray-200 hover:text-gray-800 focus:bg-gray-200 focus:text-gray-800"
 %}
 
-<nav data-controller="navbar" class="relative my-4 text-lg">
+<nav data-controller="navbar" class="{{fixed-style}} text-lg">
   {%- if home == false %}
     <a href="/"    class="{{base-style}} {{home-style}}"> Home </a>
   {%- endif %}

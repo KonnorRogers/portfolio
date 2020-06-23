@@ -9,7 +9,6 @@ export default class NavbarController extends Controller {
       if (childHref == location.pathname) {
         child.classList.add("border-b-2");
         child.classList.add("border-green-400");
-        child.classList.add("mb-0");
       }
     });
   }

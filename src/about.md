@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 # Who am I?
-{:.mt-8 .text-4xl .font-bold}
+{:.text-4xl .font-bold}
 
 My name is Konnor Rogers. I am a full stack web developer who build
 sites of all sizes using all kinds of different technology.

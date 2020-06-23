@@ -15,6 +15,6 @@ I build websites using a variety of different technologies including Ruby on Rai
 
 <a href="projects" class="px-4 text-green-800 bg-green-200 border-2 border-green-800 border-solid rounded-lg hover:border-2 hover:border-green-800 hover:border-solid">
   View my work
-  <span class="text-2xl align-middle">&#11106;</span>
+  <i class="fas fa-long-arrow-alt-right"></i>
 </a>
-{:.w-48 .px-0 .pb-12 .mx-auto .-my-2}
+{:.w-1/2 .px-0 .pb-12 .mx-auto .-my-2}

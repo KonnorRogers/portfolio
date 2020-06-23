@@ -9,16 +9,15 @@ footer {
 }
 
 main {
-  @apply py-16 bg-gray-200 shadow-2xl mx-auto;
+  min-width: 300px;
   max-width: 800px;
 }
 
 a {
-  @apply inline-block text-indigo-600;
-  margin-bottom: 2px;
+  @apply inline-block text-indigo-600 border-b-2 border-solid border-transparent;
 }
 
 a:hover,
 a:focus {
-  @apply mb-0 border-b-2 border-indigo-600 border-solid outline-none;
+  @apply border-indigo-600 outline-none;
 }

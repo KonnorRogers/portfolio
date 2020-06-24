@@ -9,17 +9,17 @@ variables:
   hover:bg-gray-300 hover:text-gray-800 focus:bg-gray-300 focus:text-gray-800"
   %}
 {% else %}
-  {% assign fixed-style = "sm:fixed flex items-center justify-center w-screen bg-gray-300 top-0 h-20" %}
+  {% assign fixed-style = "sm:fixed flex items-center justify-center w-screen bg-gray-900 opacity-75 top-0 py-2" %}
 {%- endif %}
 
 {%- assign base-style =
-  "px-4 py-1 mx-4 rounded-md
+  "px-4 py-1 mx-4 rounded-md text-gray-100 border-b-2
   hover:bg-gray-200 hover:text-gray-800 focus:bg-gray-200 focus:text-gray-800"
 %}
 
 {%- assign styles = base-style | append: home-style %}
 
-<nav data-controller="nav" class="{{fixed-style}} text-lg">
+<nav data-controller="navbar" class="{{fixed-style}} text-lg">
   {% if home == false %}
     <a href="/"    class="{{base-style}} {{home-style}}"> Home </a>
   {% endif %}

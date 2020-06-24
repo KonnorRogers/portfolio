@@ -9,19 +9,21 @@ variables:
   hover:bg-gray-300 hover:text-gray-800 focus:bg-gray-300 focus:text-gray-800"
   %}
 {% else %}
-  {% assign fixed-style = "fixed flex items-center justify-center w-screen bg-gray-300 top-0" %}
+  {% assign fixed-style = "sm:fixed flex items-center justify-center w-screen bg-gray-300 top-0 h-20" %}
 {%- endif %}
 
-{% assign base-style =
+{%- assign base-style =
   "px-4 py-1 mx-4 rounded-md
   hover:bg-gray-200 hover:text-gray-800 focus:bg-gray-200 focus:text-gray-800"
 %}
 
-<nav data-controller="navbar" class="{{fixed-style}} text-lg">
-  {%- if home == false %}
-    <a href="/"    class="{{base-style}} {{home-style}}"> Home </a>
-  {%- endif %}
+{%- assign styles = base-style | append: home-style %}
 
+<nav data-controller="nav" class="{{fixed-style}} text-lg">
+  {% if home == false %}
+    <a href="/"    class="{{base-style}} {{home-style}}"> Home </a>
+  {% endif %}
   <a href="/about" class="{{base-style}} {{home-style}}"> About </a>
   <a href="/posts" class="{{base-style}} {{home-style}}"> Posts</a>
+  {% render "nav_items", class_name: styles, home: home %}
 </nav>

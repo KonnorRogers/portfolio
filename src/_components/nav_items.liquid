@@ -1,0 +1,13 @@
+---
+variables:
+  class_name: [string, The "class" to assign to an HTML element]
+  home: [boolean, Whether or not to include the home route]
+---
+
+{% if home == false %}
+  <a href="/" class="{{class_name}}"> Home </a>
+{% endif %}
+
+<a href="/about" class="{{class_name}}"> About </a>
+<a href="/posts" class="{{class_name}}"> Posts</a>
+

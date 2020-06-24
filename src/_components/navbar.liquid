@@ -20,10 +20,5 @@ variables:
 {%- assign styles = base-style | append: home-style %}
 
 <nav data-controller="navbar" class="{{fixed-style}} text-lg">
-  {% if home == false %}
-    <a href="/"    class="{{base-style}} {{home-style}}"> Home </a>
-  {% endif %}
-  <a href="/about" class="{{base-style}} {{home-style}}"> About </a>
-  <a href="/posts" class="{{base-style}} {{home-style}}"> Posts</a>
   {% render "nav_items", class_name: styles, home: home %}
 </nav>

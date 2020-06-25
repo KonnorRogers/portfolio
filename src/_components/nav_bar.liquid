@@ -6,10 +6,10 @@ variables:
 {%- assign styles = "text-lg " %}
 
 {% if home == false %}
-  {%- assign styles = styles | append: "hidden sm:fixed flex items-center justify-center w-screen bg-gray-800 opacity-75 top-0 py-2" %}
+  {%- assign styles = styles | append: "hidden fixed sm:flex items-center justify-center w-screen bg-gray-800 opacity-75 top-0 py-2" %}
 {% endif %}
 
-<nav data-controller="navbar" class="{{styles}}">
+<nav data-controller="nav-bar" class="{{styles}}">
   {% if home %}
     {% render "home_nav" %}
   {% else %}

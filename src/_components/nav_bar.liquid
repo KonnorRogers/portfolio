@@ -1,0 +1,18 @@
+---
+variables:
+  home: [boolean, If its the home page or not]
+---
+
+{%- assign styles = "text-lg " %}
+
+{% if home == false %}
+  {%- assign styles = styles | append: "hidden sm:fixed flex items-center justify-center w-screen bg-gray-800 opacity-75 top-0 py-2" %}
+{% endif %}
+
+<nav data-controller="navbar" class="{{styles}}">
+  {% if home %}
+    {% render "home_nav" %}
+  {% else %}
+    {% render "page_nav" %}
+  {% endif %}
+</nav>

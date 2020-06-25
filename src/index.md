@@ -20,7 +20,4 @@ I am currently open to both full-time and contract opportunities.
   View my work
   <i class="pl-2 fas fa-long-arrow-alt-right"></i>
 </a>
-{:.w-1/2 .px-0 .pb-12 .mx-auto .text-center .my-2}
-
-
-
+{:.w-1/2 .px-0 .pb-2 .sm:pb-12 .mx-auto .text-center .my-2}

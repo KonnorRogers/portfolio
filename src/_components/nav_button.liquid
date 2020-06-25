@@ -1,12 +1,18 @@
-<div data-controller="nav-button">
+<div data-controller="nav-button" class="relative">
   <button data-action="nav-button#toggle"
-          class="fixed bottom-0 right-0 z-20 w-16 h-16 mx-6 my-8 bg-gray-900 rounded-full opacity-75 sm:hidden">
-    <i data-target="nav-button.iconShow" class="text-4xl text-green-300 fas fa-sort"></i>
-    <div data-target="nav-button.iconHide" class="hidden text-2xl font-bold text-green-300">X</div>
+          class="fixed bottom-0 right-0 z-20 w-16 h-16 mx-6 my-8 bg-gray-900 border-4 border-solid rounded-full outline-none focus:border-teal-400 hover:border-teal-400 sm:hidden "
+          style="outline: 0;">
+    <div data-rotation="0" data-target="nav-button.iconShow" class="relative opacity-100 transition duration-500 ease-in origin-center" style="top: 0.65rem;">
+      <i class="text-4xl text-green-300 fas fa-sort"></i>
+    </div>
+
+    <div data-rotation="0" data-target="nav-button.iconHide" class="relative opacity-0 transition duration-500 ease-in origin-center" style="bottom: 1.35rem;">
+      <i class="text-2xl font-bold text-green-300 fas fa-times"></i>
+    </div>
   </button>
-  <div class="fixed top-0 z-10 items-center justify-center hidden w-screen h-screen bg-gray-300 sm:hidden" data-target="nav-button.content">
-    <div data-target="nav-button.content nav-button.links"
-         class="flex flex-col items-center justify-center hidden w-3/4 mx-auto bg-gray-200 shadow-lg rounded-md h-1/2 sm:hidden">
+  <div class="fixed top-0 z-10 items-center justify-center hidden w-screen h-screen bg-gray-300 sm:hidden" data-target="nav-button.wrapper">
+    <div data-target="nav-button.content"
+         class="flex flex-col items-center justify-center hidden w-3/4 mx-auto bg-gray-200 shadow-lg rounded-md sm:hidden">
     {% render "nav_items", class_name: "focus:border-transparent hover:border-transparent hover:bg-gray-400 focus:bg-gray-400 w-full text-center border-b-2 font-bold text-gray-800 text-xl px-6 py-4" %}
     </div>
   </div>

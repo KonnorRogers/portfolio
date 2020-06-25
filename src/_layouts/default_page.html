@@ -2,10 +2,8 @@
 layout: default
 ---
 
-{% render "nav_bar", home: false %}
+{% render "nav_bar", home: false %} {% render "nav_button", home: false %}
 
 <main class="mx-4 mt-16 text-center md:mx-8 lg:mx-auto">
   {{ content }}
 </main>
-
-{% render "nav_button", home: false %}

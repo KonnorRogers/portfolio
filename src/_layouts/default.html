@@ -7,7 +7,8 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  {%- assign body_styles = "min-h-screen text-gray-700 bg-gray-300 font-sans" %}
+  {%- assign body_styles = "min-h-screen overflow-x-hidden text-gray-700
+  bg-gray-300 font-sans" %}
   <body class="{{ page.layout }} {{ page.page_class }} {{ body_styles }}">
     <div style="min-height: calc(100vh - 4rem);" class="relative">
       {{ content }}

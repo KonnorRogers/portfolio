@@ -4,7 +4,7 @@ variables:
   home: [boolean, Whether or not to include the home route]
 ---
 
-{% if home == false %}
+{% if home != true %}
   <a href="/" class="{{class_name}}"> Home </a>
 {% endif %}
 

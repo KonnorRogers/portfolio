@@ -36,7 +36,7 @@ personal projects using Ruby on Rails as well as React.
 {:.mt-4 .text-xl}
 
 <p>
-{% render "project_link", text: "Check out my work!" %}
+{% render "project_link", text: "Check out my projects!" %}
 </p>
 {:.pt-8}
 

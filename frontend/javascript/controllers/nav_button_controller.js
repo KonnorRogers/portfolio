@@ -28,11 +28,8 @@ export default class NavButtonController extends Controller {
   }
 
   toggleContent() {
-    const elements = [this.wrapperTarget, this.contentTarget];
     const classes = ["flex", "hidden"];
-    classes.forEach((klass) =>
-      elements.forEach((target) => target.classList.toggle(klass))
-    );
+    classes.forEach((klass) => this.wrapperTarget.classList.toggle(klass));
   }
 
   toggleIcon() {
@@ -40,7 +37,7 @@ export default class NavButtonController extends Controller {
     const classes = ["block", "opacity-100", "opacity-0"];
 
     classes.forEach((klass) =>
-      elements.forEach((target, index) => {
+      elements.forEach((target) => {
         target.classList.toggle(klass);
 
         const currentRotation = target.getAttribute("data-rotation");

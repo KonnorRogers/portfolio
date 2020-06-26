@@ -39,7 +39,7 @@ sinatra_mind:
 kubs_cli:
   source_code: https://github.com/ParamagicDev/kubs_cli
   description: ->
-    My custom built solution to handling `dotfiles` as well as other
+    My custom built solution for handling `dotfiles` as well as other
     various configuration items when using a new computer. It handles
     things like installing base dependencies as well as packages for
     things like `npm`, `ruby`, etc.
@@ -47,8 +47,6 @@ kubs_cli:
 paramagic_chess:
   source_code: https://github.com/ParamagicDev/paramagic_chess
   description: ->
-    A game of Chess implemented in Ruby for the command line. The
+    A game of Chess implemented in Ruby to be played on the command line. The
     project has a full testing suite using Rspec. It implements various
-    moves such as "en passant", "castling", and double-moving a pawn on
-    the first turn as well as all the other basic functionalities of
-    chess.
+    moves such as "en passant", "castling".

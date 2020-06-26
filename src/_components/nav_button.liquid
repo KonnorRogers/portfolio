@@ -12,8 +12,8 @@
   </button>
 
   <div class="fixed top-0 z-10 items-center justify-center hidden w-screen h-screen sm:hidden" data-target="nav-button.wrapper">
-    <button class="w-screen h-screen bg-gray-600 opacity-75 shadow-inset" data-action="nav-button#toggle"></button>
-    <div class="absolute flex flex-col justify-center bg-gray-300 shadow-2xl w-75 h-75 shadow-inset" data-target="nav-button.content">
+    <button class="w-screen h-screen bg-gray-600 opacity-75 shadow-inner" data-action="nav-button#toggle"></button>
+    <div class="absolute flex flex-col justify-center bg-gray-300 shadow rounded-lg w-75 h-75 shadow-inset" data-target="nav-button.content">
       {% render "nav_items", class_name: "transition-none focus:border-transparent hover:border-transparent hover:bg-gray-400 hover:shadow focus:shadow focus:bg-gray-400 w-full text-center border-b-2 font-bold text-gray-700 text-xl px-6 py-4" %}
     </div>
   </div>

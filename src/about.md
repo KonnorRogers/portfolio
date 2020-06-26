@@ -14,7 +14,7 @@ technology of choice is Ruby on Rails.
 
 
 ## How did I learn to code?
-{:.mt-8 .text-2xl .font-bold}
+{:.mt-6 .text-center .font-bold}
 
 I learned to code by using various free online resources. The two big resources
 I used were
@@ -26,7 +26,7 @@ fundamentals of Web Development.
 {:.mt-4 .text-xl .mx-auto}
 
 ## How have I continued learning?
-{:.mt-8 .text-2xl .font-bold}
+{:.mt-8 .text-center}
 
 Since
 finishing TheOdinProject, I have been contributing to various open source projects

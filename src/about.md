@@ -34,3 +34,9 @@ including [Bridgetown](https://bridgetownrb.com) which this site is
 actually built with! In addition I have also been working on various
 personal projects using Ruby on Rails as well as React.
 {:.mt-4 .text-xl}
+
+<p>
+{% render "project_link", text: "Check out my work!" %}
+</p>
+{:.pt-8}
+

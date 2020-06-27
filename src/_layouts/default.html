@@ -12,6 +12,6 @@
   bg-gray-300 font-sans flex flex-col relative" %}
   <body class="{{ page.layout }} {{ page.page_class }} {{ body_styles }}">
     {{ content }}
-    {% render "footer", metadata: site.metadata, info: site.data.info %}
+    {% render "footer", metadata: site.metadata, links: site.data.links %}
   </body>
 </html>

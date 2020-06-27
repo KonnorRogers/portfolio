@@ -3,15 +3,15 @@
 @import "tailwindcss/utilities";
 
 h1 {
-  @apply text-2xl font-bold;
+  @apply text-2xl font-bold mt-8;
 }
 
 h2 {
-  @apply text-xl font-bold;
+  @apply mt-6 text-xl font-bold;
 }
 
 h3, h4, h5, h6 {
-  @apply text-lg font-bold;
+  @apply mt-4 text-lg font-bold;
 }
 
 h1,
@@ -34,4 +34,8 @@ a {
 a:hover,
 a:focus {
   @apply border-indigo-600 outline-none;
+}
+
+p {
+  @apply my-2;
 }

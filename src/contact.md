@@ -2,21 +2,8 @@
 layout: page
 ---
 
-# Contact Information
+# Additional Information
 
-## Email
+{% render "information", metadata: site.metadata, links: site.data.links %}
 
-{{ site.metadata.email }}
-
-## LinkedIn
-
-{{ site.data.info.linkedin }}
-
-## Github
-
-{{ site.data.info.github }}
-
-## Twitter
-
-{{ site.data.info.twitter }}
 

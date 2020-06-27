@@ -8,11 +8,9 @@ h1 {
 
 h2 {
   @apply text-xl font-bold;
-  @apply text-left;
 }
 
 h3, h4, h5, h6 {
-  @apply text-left;
   @apply text-lg font-bold;
 }
 
@@ -24,6 +22,7 @@ footer {
 
 main {
   min-width: 300px;
+  width: 100%;
   max-width: 800px;
 }
 

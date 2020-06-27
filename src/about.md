@@ -38,5 +38,5 @@ personal projects using Ruby on Rails as well as React.
 <p>
 {% render "project_link", text: "Check out my projects!" %}
 </p>
-{:.pt-8}
+{:.pt-8 .text-center}
 

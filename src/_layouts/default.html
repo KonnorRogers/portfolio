@@ -9,11 +9,9 @@
     ></script>
   </head>
   {%- assign body_styles = "min-h-screen overflow-x-hidden text-gray-700
-  bg-gray-300 font-sans flex flex-col justify-center " %}
+  bg-gray-300 font-sans flex flex-col relative" %}
   <body class="{{ page.layout }} {{ page.page_class }} {{ body_styles }}">
-    <div style="min-height: calc(100vh - 5rem);" class="relative">
-      {{ content }}
-    </div>
+    {{ content }}
     {% render "footer", metadata: site.metadata, info: site.data.info %}
   </body>
 </html>

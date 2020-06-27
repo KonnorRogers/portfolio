@@ -4,14 +4,5 @@ layout: page
 
 # Additional Information
 
-## Email
+{% render "information", metadata: site.metadata, links: site.data.links %}
 
-Konnor7414@gmail.com
-
-## LinkedIn
-
-## Github
-
-## Twitter
-
-## Blog

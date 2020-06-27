@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: post
+title: Additional Information
+permalink: /information/
 ---
-
-# Additional Information
 
 {% render "information", metadata: site.metadata, links: site.data.links %}
 

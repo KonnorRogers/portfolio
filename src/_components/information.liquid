@@ -4,9 +4,43 @@ variables:
   links: [Object, "links"]
 ---
 
+{%- assign icon-link-styles = "border-none hover:opacity-75 focus:opacity-75" %}
 
-<h2> Email:    </h2> <span>{{ metadata.email }}</span>
-<h2> Blog:     </h2> <span>{{ links.blog }}</span>
-<h2> Github:   </h2> <span>{{ links.github }}</span>
-<h2> Twitter:  </h2> <span>{{ links.twitter }}</span>
-<h2> LinkedIn: </h2> <span>{{ links.linkedin }}</span>
+
+<h2>Email:</h2>
+<span class="text-indigo-600">
+  <i class="text-xl pr-4 fas fa-envelope"></i>
+  {{ metadata.email }}
+</span>
+
+<h2>Blog:</h2>
+<span>
+  <a class="{{icon-link-styles}}" href="{{links.blog}}">
+    <i class="text-xl pr-4 fas fa-book"></i>
+  </a>
+  <a href="{{links.blog}}">{{ links.blog }}</a>
+</span>
+
+<h2>Github:</h2>
+<span>
+  <a class="{{icon-link-styles}}" href="{{links.github}}">
+    <i class="text-xl pr-4 fab fa-github"></i>
+  </a>
+  <a href="{{links.github}}">{{ links.github }}</a>
+</span>
+
+<h2>Twitter:</h2>
+<span>
+  <a class="{{icon-link-styles}}" href="{{links.twitter}}">
+    <i class="text-xl pr-4 fab fa-twitter"></i>
+  </a>
+  <a href="{{links.twitter}}">{{ links.twitter }}</a>
+</span>
+
+<h2>LinkedIn:</h2>
+<span>
+  <a class="{{icon-link-styles}}" href="{{links.linkedin}}">
+    <i class="text-xl pr-4 fab fa-linkedin"></i>
+  </a>
+  <a href="{{links.linkedin}}">{{ links.linkedin }}</a>
+</span>

@@ -1,11 +1,25 @@
-{%- assign social-styles = "border-0 text-xl px-1 hover:text-indigo-400" %}
-<footer class="absolute bottom-0 w-screen h-16 pt-4 mt-4 bg-gray-400">
-  Built with
-  <a class="font-bold text-indigo-600" href="https://bridgetownrb.com">Bridgetown</a>
-  | <span class="mr-2">&copy; {{ "today" | date: "%Y" }}</span>
+{% assign social-styles = "border-0 text-xl px-1 hover:text-indigo-600 focus:text-indigo-600" %}
 
-  <a href="{{ links.twitter }}" class="{{social-styles}}" rel="nofollow" target="_blank"><i class="fab fa-twitter"></i></a>
-  <a href="{{ links.github }}" class="{{social-styles}}" rel="nofollow" target="_blank"><i class="fab fa-github"></i></a>
-  <a href="{{ links.linkedin }}" class="{{social-styles}}" rel="nofollow" target="_blank"><i class="fab fa-linkedin"></i></a>
+<footer class="absolute bottom-0 flex items-center justify-center w-screen h-16 overflow-hidden bg-gray-400">
+  <span>
+    Built with
+    <a class="font-bold" href="https://bridgetownrb.com">Bridgetown</a>
+    | <span class="mr-2">&copy; {{ "today" | date: "%Y" }}</span>
+  </span>
+
+  <span>
+    <a href="{{ links.twitter }}" class="{{social-styles}}" rel="nofollow" target="_blank">
+      <i class="fab fa-twitter" aria-hidden="true"></i>
+      <span class="sr-only">Twitter</span>
+    </a>
+    <a href="{{ links.github }}" class="{{social-styles}}" rel="nofollow" target="_blank">
+      <i class="fab fa-github" aria-hidden="true"></i>
+      <span class="sr-only">Github</span>
+    </a>
+    <a href="{{ links.linkedin }}" class="{{social-styles}}" rel="nofollow" target="_blank">
+      <i class="fab fa-linkedin" aria-hidden="true"></i>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </span>
 </footer>
 

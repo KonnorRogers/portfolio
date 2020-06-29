@@ -9,7 +9,8 @@ variables:
   {%- assign styles = styles | append: "hidden fixed w-screen bg-gray-700 shadow top-0 py-2" %}
 {% endif %}
 
-<nav data-controller="nav-bar" class="{{styles}}">
+<nav data-controller="nav-bar"
+     class="{{styles}}">
   {% if home %}
     {% render "home_nav" %}
   {% else %}

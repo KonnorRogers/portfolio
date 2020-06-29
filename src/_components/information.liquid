@@ -8,15 +8,21 @@ variables:
 
 
 <h2>Email:</h2>
-<span class="text-indigo-600">
-  <i class="text-xl pr-4 fas fa-envelope"></i>
-  {{ metadata.email }}
+<span class="">
+  <a class="{{icon-link-styles}}" href="mailto:{{metadata.email}}">
+    <i class="pr-4 text-xl fas fa-envelope">
+      <span class="sr-only">{{metadata.email}}</span>
+    </i>
+  </a>
+  <a href="mailto:{{metadata.email}}">
+    {{ metadata.email }}
+  </a>
 </span>
 
 <h2>Blog:</h2>
 <span>
   <a class="{{icon-link-styles}}" href="{{links.blog}}">
-    <i class="text-xl pr-4 fas fa-book"></i>
+    <i class="pr-4 text-xl fas fa-book"><span class="sr-only">{{links.blog}}</span></i>
   </a>
   <a href="{{links.blog}}">{{ links.blog }}</a>
 </span>
@@ -24,7 +30,7 @@ variables:
 <h2>Github:</h2>
 <span>
   <a class="{{icon-link-styles}}" href="{{links.github}}">
-    <i class="text-xl pr-4 fab fa-github"></i>
+    <i class="pr-4 text-xl fab fa-github"><span class="sr-only">{{links.github}}</span></i>
   </a>
   <a href="{{links.github}}">{{ links.github }}</a>
 </span>
@@ -32,7 +38,7 @@ variables:
 <h2>Twitter:</h2>
 <span>
   <a class="{{icon-link-styles}}" href="{{links.twitter}}">
-    <i class="text-xl pr-4 fab fa-twitter"></i>
+    <i class="pr-4 text-xl fab fa-twitter"><span class="sr-only">{{links.twitter}}</span></i>
   </a>
   <a href="{{links.twitter}}">{{ links.twitter }}</a>
 </span>
@@ -40,7 +46,7 @@ variables:
 <h2>LinkedIn:</h2>
 <span>
   <a class="{{icon-link-styles}}" href="{{links.linkedin}}">
-    <i class="text-xl pr-4 fab fa-linkedin"></i>
+    <i class="pr-4 text-xl fab fa-linkedin"><span class="sr-only">{{links.linkedin}}</span></i>
   </a>
   <a href="{{links.linkedin}}">{{ links.linkedin }}</a>
 </span>

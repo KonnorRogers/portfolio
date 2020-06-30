@@ -18,9 +18,7 @@ export default class NavButtonController extends Controller {
     currentPath.classList.add("text-green-600");
   }
 
-  toggle(event) {
-    event.currentTarget.blur();
-
+  toggle() {
     this.toggleIcon();
     setTimeout(() => {
       this.toggleContent();

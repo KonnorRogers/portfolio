@@ -7,6 +7,7 @@ describe("Accessibility tests", () => {
 
   it("Has no detectable accessibility violations on load", () => {
     cy.checkA11y();
+    cy.viewport("iphone-3").checkA11y();
   });
 
   it("navigates to each page and tests accessibility", () => {

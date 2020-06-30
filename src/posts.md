@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: post
 title: Posts
 permalink: /posts/
 ---
+
 
 <ul>
   {% for post in site.posts %}

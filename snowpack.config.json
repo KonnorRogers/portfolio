@@ -7,8 +7,6 @@
     "run:bridgetown::watch": "$1 --watch",
     "build:css": "postcss"
   },
-  "buildOptions": {
-  },
   "devOptions": {
     "bundle": true,
     "open": "none",

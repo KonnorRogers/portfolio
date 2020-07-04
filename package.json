@@ -3,7 +3,7 @@
     "start": "node start.js",
     "dev": "snowpack dev",
     "build:watch": "bundle exec bridgetown build --watch",
-    "build": "snowpack build",
+    "build": "bundle exec bridgetown build && snowpack build",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\"",
     "cy:open": "cypress open",

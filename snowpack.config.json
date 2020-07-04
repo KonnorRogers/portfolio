@@ -5,15 +5,18 @@
     "mount:output": "mount output --to /",
     "run:bridgetown": "bundle exec bridgetown build",
     "run:bridgetown::watch": "$1 --watch",
-    "build:css": "postcss"
+    "build:css": "postcss",
+    "bundle:*": "parcel build"
   },
   "buildOptions": {
   },
   "devOptions": {
+    "bundle": true,
     "open": "none",
     "out": "output"
   },
   "plugins": [
-    "@snowpack/plugin-babel"
+    "@snowpack/plugin-babel",
+    "@snowpack/plugin-parcel"
   ]
 }

@@ -5,11 +5,7 @@
     "build:watch": "bundle exec bridgetown build --watch",
     "build": "bundle exec bridgetown build && snowpack build",
     "format": "prettier --write \"src/**/*.js\"",
-    "lint": "prettier --check \"src/**/*.js\"",
-    "cy:open": "cypress open",
-    "cy:test": "start-server-and-test 'yarn start' http-get://localhost:4001 'yarn cy:open'",
-    "cy:run": "cypress run",
-    "cy:test:ci": "start-server-and-test 'yarn start' http-get://localhost:4001 'yarn cy:run'"
+    "lint": "prettier --check \"src/**/*.js\""
   },
   "dependencies": {},
   "devDependencies": {

@@ -3,13 +3,14 @@
     "mount:src": "mount src --to /_dist_",
     "mount:frontend": "mount frontend --to /_dist_",
     "mount:output": "mount output --to /",
+    "run:bridgetown": "bundle exec bridgetown build",
+    "run:bridgetown::watch": "$1 --watch",
     "build:css": "postcss"
   },
   "buildOptions": {
-    "clean": true,
-    "bundle": true
   },
   "devOptions": {
+    "open": "none",
     "out": "output"
   },
   "plugins": [

@@ -1,19 +1,20 @@
 {
   "scripts": {
-    "start": "node start.js",
-    "dev": "snowpack dev",
-    "build:watch": "bundle exec bridgetown build --watch",
-    "build": "bundle exec bridgetown build && snowpack build",
+    "start": "snowpack dev",
+    "build:prod": "bundle exec bridgetown build && snowpack build",
+    "build": "snowpack build",
     "format": "prettier --write \"src/**/*.js\"",
-    "lint": "prettier --check \"src/**/*.js\""
+    "lint": "prettier --check \"src/**/*.js\"",
+    "cy:open": "cypress open",
+    "cy:test": "start-server-and-test 'yarn start' http-get://localhost:4001 'yarn cy:open'",
+    "cy:run": "cypress run",
+    "cy:test:ci": "start-server-and-test 'yarn start' http-get://localhost:4001 'yarn cy:run'"
   },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-proposal-decorators": "^7.10.1",
-    "@babel/plugin-transform-runtime": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
     "@snowpack/plugin-babel": "^1.4.0",
     "@snowpack/plugin-webpack": "^1.4.0",
     "concurrently": "^5.2.0",

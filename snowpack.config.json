@@ -10,7 +10,6 @@
     "clean": true
   },
   "devOptions": {
-    "fallback": "../output/index.html",
     "out": "output"
   },
   "plugins": [

@@ -5,8 +5,7 @@
     "mount:output": "mount output --to /",
     "run:bridgetown": "bundle exec bridgetown build",
     "run:bridgetown::watch": "$1 --watch",
-    "build:css": "postcss",
-    "bundle:*": "parcel build"
+    "build:css": "postcss"
   },
   "buildOptions": {
   },

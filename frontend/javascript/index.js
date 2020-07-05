@@ -1,4 +1,4 @@
-import "../styles/index.css";
+// import "../styles/index.css";
 // import { Application } from "stimulus";
 // import Turbolinks from "turbolinks";
 

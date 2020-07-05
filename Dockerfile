@@ -2,7 +2,7 @@ FROM ruby:2.6-alpine as builder
 
 RUN apk add --no-cache --virtual \
     # required
-    nodejs-dev yarn bash \
+    nodejs-dev npm yarn bash \
     tzdata build-base libffi-dev \
     curl git \
     #

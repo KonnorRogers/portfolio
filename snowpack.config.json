@@ -3,9 +3,9 @@
     "mount:src": "mount src --to /_dist_",
     "mount:frontend": "mount frontend --to /_dist_",
     "mount:output": "mount output --to /",
+    "build:css": "postcss",
     "run:bridgetown": "bundle exec bridgetown build",
-    "run:bridgetown::watch": "$1 --watch",
-    "build:css": "postcss frontend/styles/index.css -o _dist_/styles/main.css -c postcss.config.js"
+    "run:bridgetown::watch": "$1 --watch"
   },
   "devOptions": {
     "bundle": true,

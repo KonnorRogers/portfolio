@@ -1,8 +1,7 @@
 {
   "scripts": {
     "start": "snowpack dev",
-    "build:prod": "bundle exec bridgetown build && snowpack build",
-    "build": "snowpack build",
+    "build": "BRIDGETOWN_ENV=production NODE_ENV=production  snowpack build",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\"",
     "cy:open": "cypress open",

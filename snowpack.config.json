@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "mount:frontend": "mount frontend --to /_frontend",
+    "mount:frontend": "mount frontend --to /_frontend_",
     "mount:output": "mount output --to /",
     "build:css": "postcss",
     "run:bridgetown": "bundle exec bridgetown build",

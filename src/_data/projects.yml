@@ -1,4 +1,4 @@
-ma_protocol_rewrite:
+- name: ma_protocol_rewrite
   source_code: https://github.com/ParamagicDev/ma-protocol-rewrite/tree/master
   deployed_app: https://inspiring-varahamihira-efb922.netlify.app/
   description: ->
@@ -7,16 +7,15 @@ ma_protocol_rewrite:
     navigable and searchable interface for reading the protocols. This is the
     current project im working on.
 
-paramagic_book:
+- name: paramagic_book
   source_code: https://github.com/ParamagicDev/odin-facebook
   deployed_app: https://paramagic-app.herokuapp.com/signup
   description: ->
-    A Ruby on Rails website created to mimic the functionality of
     Facebook. It includes things such as OAuth authentication via
     Facebook, authentication via Devise, PostgresQL database and
     deployed via Heroku.
 
-flight_booker:
+- name: flight_booker
   source_code: https://github.com/ParamagicDev/odin-flight-booker
   deployed_app: https://github.com/ParamagicDev/odin-flight-booker
   description: ->
@@ -25,7 +24,7 @@ flight_booker:
     easier. It also uses PostgresQL as the database and is deployed via
     Heroku.
 
-sinatra_mind:
+- name: sinatra_mind
   source_code: https://github.com/ParamagicDev/sinatra_mind
   deployed_app: https://immense-mesa-98857.herokuapp.com/mastermind
   description: ->
@@ -36,7 +35,7 @@ sinatra_mind:
     written using Sinatra & Ruby and deployed via Heroku. You have 12
     guesses to get the correct colors in the correct order.
 
-kubs_cli:
+- name: kubs_cli
   source_code: https://github.com/ParamagicDev/kubs_cli
   description: ->
     My custom built solution for handling `dotfiles` as well as other
@@ -44,7 +43,7 @@ kubs_cli:
     things like installing base dependencies as well as packages for
     things like `npm`, `ruby`, etc.
 
-paramagic_chess:
+- name: paramagic_chess
   source_code: https://github.com/ParamagicDev/paramagic_chess
   description: ->
     A game of Chess implemented in Ruby to be played on the command line. The

@@ -15,7 +15,7 @@ export default class NavButtonController extends Controller {
       return href + "/" == window.location.pathname;
     });
 
-    currentPath.classList.add("text-indigo-599");
+    currentPath.classList.add("text-indigo-500");
   }
 
   toggle() {

@@ -14,7 +14,7 @@ services:
     command: bash -c "yarn start"
 
     ports:
-      - '8080:8080'
+      - '4000:4000'
 
     volumes:
       - .:${APP_DIR:-/home/user/bridgetown-app}

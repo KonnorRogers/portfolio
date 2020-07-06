@@ -19,6 +19,8 @@ ARG GROUP_ID=${GROUP_ID:-1000}
 ARG DOCKER_USER=${DOCKER_USER:-user}
 ARG APP_DIR=${APP_DIR:-/home/user/bridgetown-app}
 
+EXPOSE 4000
+
 # Create a non-root user
 RUN addgroup -g $GROUP_ID -S $GROUP_ID
 RUN adduser --disabled-password -G $GROUP_ID --uid $USER_ID -S $DOCKER_USER
@@ -43,6 +45,8 @@ COPY --chown=$USER_ID:$GROUP_ID package.json $APP_DIR
 COPY --chown=$USER_ID:$GROUP_ID yarn.lock $APP_DIR
 
 RUN yarn install
+
+COPY --chown=$USER_ID:$GROUP_ID . $APP_DIR
 
 CMD ["yarn", "start"]
 

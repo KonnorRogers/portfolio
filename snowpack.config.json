@@ -7,10 +7,19 @@
     "run:bridgetown": "bundle exec bridgetown build",
     "run:bridgetown::watch": "$1 --watch"
   },
+  "installOptions": {
+    "env": {
+      "NODE_ENV": true
+    }
+  },
   "devOptions": {
+    "port": 4000,
     "bundle": true,
     "open": "none",
     "out": "output"
+  },
+  "proxy": {
+    "0.0.0.0:4000": "0.0.0.0:4000"
   },
   "plugins": [
     "@snowpack/plugin-babel",

@@ -27,8 +27,13 @@ main {
 }
 
 a {
-  @apply inline-block text-indigo-800 border-b-2 border-solid border-indigo-800;
+  @apply inline-block text-indigo-800 border-b-2 border-solid border-transparent;
   @apply transition duration-500 ease-in-out;
+}
+
+p > a,
+li > a {
+  @apply border-indigo-800;
 }
 
 a:hover,

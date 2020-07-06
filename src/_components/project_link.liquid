@@ -1,9 +1,14 @@
 ---
 variables:
   text: [string, text to insert]
+  tab_index: [string, tabindex number]
 ---
 
-<a href="projects" class="px-4 py-2 text-lg text-green-800 bg-green-200 border-2 border-transparent border-solid rounded-lg hover:bg-green-100 hover:border-green-800 hover:border-solid focus:border-green-800 focus:border-solid">
+{% if tab_index %}
+  {% assign tab = "tabindex='" | append: tab_index | append: "'" %}
+{% endif %}
+
+<a href="projects" class="px-4 py-2 text-lg text-green-800 bg-green-200 border-2 border-transparent border-solid rounded-lg hover:bg-green-100 hover:border-green-800 hover:border-solid hover:text-green-800 focus:text-green-800 focus:bg-green-100 focus:border-green-800 focus:border-solid" {{tab}}>
   {{ text }}
   <i class="pl-2 fas fa-long-arrow-alt-right"></i>
 </a>

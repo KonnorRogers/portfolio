@@ -10,7 +10,8 @@ variables:
 {% endif %}
 
 <nav data-controller="nav-bar"
-     class="{{styles}}">
+     class="{{styles}}"
+     tabindex="0">
   {% if home %}
     {% render "home_nav" %}
   {% else %}

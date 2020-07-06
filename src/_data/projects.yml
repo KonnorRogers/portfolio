@@ -1,51 +1,57 @@
-- name: ma_protocol_rewrite
+- name: MA Protocol Rewrite
+  img: /images/ma-protocol-rewrite.png
   source_code: https://github.com/ParamagicDev/ma-protocol-rewrite/tree/master
   deployed_app: https://inspiring-varahamihira-efb922.netlify.app/
-  description: ->
-    A rewrite of EMS protocols for the state of Massachusetts. The app
+  description:
+    A rewrite of the EMS protocols for the state of Massachusetts. The app
     is written in React / Gatsby and attempts to created a more
     navigable and searchable interface for reading the protocols. This is the
     current project im working on.
 
-- name: paramagic_book
+- name: Paramagic Book
+  img: /images/paramagic-book.png
   source_code: https://github.com/ParamagicDev/odin-facebook
   deployed_app: https://paramagic-app.herokuapp.com/signup
-  description: ->
-    Facebook. It includes things such as OAuth authentication via
-    Facebook, authentication via Devise, PostgresQL database and
-    deployed via Heroku.
+  description:
+    A clone of Facebook written using Ruby on Rails. It includes things such as
+    OAuth authentication via Facebook, authentication via Devise, PostgresQL
+    database and deployed via Heroku.
 
-- name: flight_booker
+- name: Flight Booker
+  img: /images/flight-booker.png
   source_code: https://github.com/ParamagicDev/odin-flight-booker
   deployed_app: https://github.com/ParamagicDev/odin-flight-booker
-  description: ->
+  description:
     A Ruby on Rails website created to go through booking a flight. It
     uses things such as nested_attributes to make submitting forms
     easier. It also uses PostgresQL as the database and is deployed via
     Heroku.
 
-- name: sinatra_mind
+- name: Sinatra Mind
+  img: /images/sinatra-mind.png
   source_code: https://github.com/ParamagicDev/sinatra_mind
   deployed_app: https://immense-mesa-98857.herokuapp.com/mastermind
-  description: ->
+  description:
     A game of
     <a href="https://en.wikipedia.org/wiki/Mastermind_(board_game)">
-    Mastermind
+      Mastermind
     </a>
     written using Sinatra & Ruby and deployed via Heroku. You have 12
     guesses to get the correct colors in the correct order.
 
-- name: kubs_cli
+- name: Kubs CLI
+  img: /images/kubs-cli.png
   source_code: https://github.com/ParamagicDev/kubs_cli
-  description: ->
+  description:
     My custom built solution for handling `dotfiles` as well as other
     various configuration items when using a new computer. It handles
     things like installing base dependencies as well as packages for
     things like `npm`, `ruby`, etc.
 
-- name: paramagic_chess
+- name: Paramagic Chess
+  img: /images/chess.png
   source_code: https://github.com/ParamagicDev/paramagic_chess
-  description: ->
+  description:
     A game of Chess implemented in Ruby to be played on the command line. The
     project has a full testing suite using Rspec. It implements various
     moves such as "en passant", "castling".

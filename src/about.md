@@ -1,11 +1,8 @@
 ---
 layout: page
-title: About
+title: Who am I?
 permalink: /about/
 ---
-
-# Who am I?
-{:.text-4xl .font-bold}
 
 My name is {{ site.data.info.first_name }} {{ site.data.info.last_name }}. I am a full stack web developer who builds
 sites of all sizes using all kinds of different technologies. My

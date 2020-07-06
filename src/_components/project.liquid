@@ -1,0 +1,37 @@
+---
+variables:
+  project: [Object, Project to render]
+---
+
+<div class="flex flex-col items-center p-4 text-center border border-gray-300 border-solid shadow">
+  <p class="text-xl font-bold">
+    {{ project.name }}
+  </p>
+
+  {% if project.img %}
+    <p>
+      {{ project.img }}
+    </p>
+  {% endif %}
+
+  {% if project.deployed_app %}
+    <p class="pt-2">
+      <span class="block text-gray-900">Deployed App:</span>
+      <a href="{{project.deployed_app}}">
+        {{ project.deployed_app }}
+      </a>
+    </p>
+  {% endif %}
+
+  <p>
+    <span class="block text-gray-900">Source Code:</span>
+    <a href="{{project.source_code}}">
+      {{ project.source_code }}
+    </a>
+  </p>
+
+  <p class="text-gray-800">
+    {{ project.description }}
+  </p>
+</div>
+

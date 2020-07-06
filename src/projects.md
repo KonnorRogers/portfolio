@@ -4,9 +4,8 @@ title: Projects
 permalink: /projects/
 ---
 
-Hi there!
-
-{% for project in site.data.projects %}
-  {{ project.name }}
-{% endfor %}
-
+{% rendercontent "project_grid" %}
+  {% for my_project in site.data.projects %}
+    {% render "project", project: my_project %}
+  {% endfor %}
+{% endrendercontent %}

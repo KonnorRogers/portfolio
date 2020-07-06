@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Your First Post on Bridgetown"
 date:   2020-06-19 16:17:23 -0400
 categories: updates

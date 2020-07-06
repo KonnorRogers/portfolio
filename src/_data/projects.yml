@@ -1,5 +1,6 @@
 - name: MA Protocol Rewrite
-  img: /images/ma-protocol-rewrite.png
+  img_path: /images/ma-protocol-rewrite.png
+  alt_text: A picture of my MA Protocol Rewrite website being used in a browser.
   source_code: https://github.com/ParamagicDev/ma-protocol-rewrite/tree/master
   deployed_app: https://inspiring-varahamihira-efb922.netlify.app/
   description:
@@ -9,7 +10,8 @@
     current project im working on.
 
 - name: Paramagic Book
-  img: /images/paramagic-book.png
+  img_path: /images/paramagic-book.png
+  alt_text: A picture of my paramagic book website being used in a browser.
   source_code: https://github.com/ParamagicDev/odin-facebook
   deployed_app: https://paramagic-app.herokuapp.com/signup
   description:
@@ -18,7 +20,8 @@
     database and deployed via Heroku.
 
 - name: Flight Booker
-  img: /images/flight-booker.png
+  img_path: /images/flight-booker.png
+  alt_text: A picture of my flight-booking being used in a browser.
   source_code: https://github.com/ParamagicDev/odin-flight-booker
   deployed_app: https://github.com/ParamagicDev/odin-flight-booker
   description:
@@ -28,7 +31,8 @@
     Heroku.
 
 - name: Sinatra Mind
-  img: /images/sinatra-mind.png
+  img_path: /images/sinatra-mind.png
+  alt_text: A picture of my game of Mastermind being played in browser.
   source_code: https://github.com/ParamagicDev/sinatra_mind
   deployed_app: https://immense-mesa-98857.herokuapp.com/mastermind
   description:
@@ -40,7 +44,8 @@
     guesses to get the correct colors in the correct order.
 
 - name: Kubs CLI
-  img: /images/kubs-cli.png
+  img_path: /images/kubs-cli.jpg
+  alt_text: A picture of a random terminal with binary flowing on screen.
   source_code: https://github.com/ParamagicDev/kubs_cli
   description:
     My custom built solution for handling `dotfiles` as well as other
@@ -49,7 +54,8 @@
     things like `npm`, `ruby`, etc.
 
 - name: Paramagic Chess
-  img: /images/chess.png
+  img_path: /images/chess.png
+  alt_text: A picture of a game of chess being played in the terminal using my code.
   source_code: https://github.com/ParamagicDev/paramagic_chess
   description:
     A game of Chess implemented in Ruby to be played on the command line. The

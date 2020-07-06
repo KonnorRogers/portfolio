@@ -3,21 +3,31 @@ variables:
   project: [Object, Project to render]
 ---
 
-<div class="flex flex-col items-center p-4 text-center border border-gray-300 border-solid shadow">
-  <p class="text-xl font-bold">
+<div class="flex flex-col items-center p-4 text-center border border-gray-300 border-solid rounded-lg shadow">
     {{ project.name }}
   </p>
 
-  {% if project.img %}
-    <p>
-      {{ project.img }}
-    </p>
+  {% if project.deployed_app %}
+    {% assign href = project.deployed_app %}
+  {% else %}
+    {% assign href = project.source_code %}
   {% endif %}
+
+  <a href="{{href}}"
+     target="_blank"
+     rel="nofollow external noopener"
+     class="p-2 border-transparent rounded-lg md:border-indigo-800">
+    <img height="300px" width="300px"
+         class="rounded-lg"
+         src="{{project.img_path}}"
+         alt="{{project.alt_text}}" />
+  </a>
 
   {% if project.deployed_app %}
     <p class="pt-2">
       <span class="block text-gray-900">Deployed App:</span>
-      <a href="{{project.deployed_app}}">
+      <a href="{{project.deployed_app}}"
+         class="border-transparent md:border-indigo-800">
         {{ project.deployed_app }}
       </a>
     </p>
@@ -25,13 +35,10 @@ variables:
 
   <p>
     <span class="block text-gray-900">Source Code:</span>
-    <a href="{{project.source_code}}">
+    <a href="{{project.source_code}}"
+       class="border-transparent md:border-indigo-800">
       {{ project.source_code }}
     </a>
-  </p>
-
-  <p class="text-gray-800">
-    {{ project.description }}
   </p>
 </div>
 

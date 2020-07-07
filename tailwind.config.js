@@ -2,7 +2,7 @@ module.exports = {
   purge: {
     mode: 'production',
     options: {
-      whitelist: ['pb-12', 'text-indigo-700']
+      whitelist: ['pb-12', 'pt-8', 'text-indigo-700']
     },
     content: ['./src/**/*.html', './src/**/*.liquid', './output/**/*.html', './output/**/*.liquid']
   },

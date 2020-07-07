@@ -48,10 +48,10 @@
   alt_text: A picture of a random terminal with binary flowing on screen.
   source_code: https://github.com/ParamagicDev/kubs_cli
   description:
-    My custom built solution for handling `dotfiles` as well as other
+    My custom built solution for handling <code>dotfiles</code> as well as other
     various configuration items when using a new computer. It handles
     things like installing base dependencies as well as packages for
-    things like `npm`, `ruby`, etc.
+    things like <code>npm</code>, <code>ruby</code>, etc.
 
 - name: Paramagic Chess
   img_path: /images/chess.png

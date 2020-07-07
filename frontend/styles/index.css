@@ -45,3 +45,8 @@ a:focus {
 p {
   @apply my-2;
 }
+
+code {
+  font-size: 90%;
+  @apply px-2 py-1 bg-gray-300 text-gray-900 rounded;
+}

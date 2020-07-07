@@ -12,6 +12,7 @@
     }
   },
   "devOptions": {
+    "clean": true,
     "port": 4000,
     "bundle": true,
     "open": "none",

@@ -17,7 +17,7 @@ export default class NavButtonController extends Controller {
       });
 
       currentPath.classList.add("text-indigo-700");
-    }
+    })
   }
 
   toggle() {

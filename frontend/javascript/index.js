@@ -3,6 +3,6 @@ import { Application } from "stimulus";
 import Turbolinks from "turbolinks";
 
 const application = Application.start();
-const context = require.context("./controllers", true, /.js$/);	// const context = require.context("./controllers", true, /.js$/);
-application.load(definitionsFromContext(context));	// application.load(definitionsFromContext(context));
+const context = require.context("./controllers", true, /.js$/);
+application.load(definitionsFromContext(context));
 Turbolinks.start();	// Turbolinks.start();

@@ -5,17 +5,17 @@ export default class NavButtonController extends Controller {
 
   connect() {
     const children = Array.from(this.contentTarget.children);
-      const currentPath = children.find((child) => {
-        const href = child.getAttribute("href");
-        if (href == window.location.pathname) {
-          return child;
-        }
+    const currentPath = children.find((child) => {
+      const href = child.getAttribute("href");
+      if (href == window.location.pathname) {
+        return child;
+      }
 
-        return href + "/" == window.location.pathname;
-      });
+      return href + "/" == window.location.pathname;
+    });
 
-      currentPath.classList.add("text-indigo-700");
-    }
+    currentPath.classList.add("text-indigo-700");
+  }
 
   toggle() {
     this.toggleIcon();

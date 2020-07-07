@@ -28,8 +28,7 @@ variables:
   {% if project.deployed_app %}
     <p class="pt-2">
       <span class="block text-gray-900">Deployed App:</span>
-      <a href="{{project.deployed_app}}"
-         class="border-transparent md:border-indigo-800">
+      <a href="{{project.deployed_app}}">
         {{ project.deployed_app }}
       </a>
     </p>
@@ -37,8 +36,7 @@ variables:
 
   <p>
     <span class="block text-gray-900">Source Code:</span>
-    <a href="{{project.source_code}}"
-       class="border-transparent md:border-indigo-800">
+    <a href="{{project.source_code}}">
       {{ project.source_code }}
     </a>
   </p>

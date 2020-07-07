@@ -22,7 +22,7 @@
     "cypress": "^4.8.0",
     "cypress-axe": "^0.8.1",
     "esbuild": "^0.5.21",
-    "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.4",
     "postcss-cli": "^7.1.1",
     "prettier": "^2.0.0",
     "snowpack": "^2.6.3",

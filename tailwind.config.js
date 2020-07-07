@@ -1,8 +1,8 @@
 module.exports = {
-  // purge: {
-  //   mode: "production",
-  //   content: ["./src/**/*.html"],
-  // },
+  purge: {
+    mode: "production",
+    content: ["./src/**/*.html", "./src/**/*.liquid"],
+  },
   theme: {
     extend: {
       zIndex: {

@@ -14,7 +14,7 @@
   "devOptions": {
     "clean": true,
     "port": 4000,
-    "bundle": true,
+    "bundle": false,
     "open": "none",
     "out": "output"
   },

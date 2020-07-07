@@ -1,6 +1,9 @@
 module.exports = {
   purge: {
     mode: 'production',
+    options: {
+      whitelist: ['pb-12']
+    },
     content: ['./src/**/*.html', './src/**/*.liquid', './output/**/*.html', './output/**/*.liquid']
   },
   theme: {

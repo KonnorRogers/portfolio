@@ -5,7 +5,7 @@
   deployed_app: https://inspiring-varahamihira-efb922.netlify.app/
   description:
     A rewrite of the EMS protocols for the state of Massachusetts. The app
-    is written in React / Gatsby and attempts to created a more
+    is written in React / Gatsby and attempts to create a more
     navigable and searchable interface for reading the protocols. This is the
     current project im working on.
 

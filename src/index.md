@@ -19,5 +19,5 @@ I am currently open to both full-time and contract opportunities.
 <p>
   {% render "project_link", text: "View my work", tab_index: "0" %}
 </p>
-{:.px-0 .pb-2 .pb-12 .mx-auto .text-center .my-2}
+{:.px-0 .pt-4 .pb-2 .pb-12 .mx-auto .text-center .my-2}
 

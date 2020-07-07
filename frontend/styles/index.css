@@ -27,7 +27,7 @@ main {
 }
 
 a {
-  @apply inline-block text-indigo-800 border-b-2 border-solid border-transparent;
+  @apply inline text-indigo-800 border-b-2 border-solid border-transparent;
   @apply transition duration-500 ease-in-out;
 }
 

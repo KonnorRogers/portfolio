@@ -3,7 +3,7 @@ import { Controller } from "stimulus";
 export default class NavButtonController extends Controller {
   static targets = ["iconHide", "iconShow", "content", "wrapper"];
 
-  connect() {
+  initialize() {
     const children = Array.from(this.contentTarget.children);
 
     document.addEventListener("turbolinks:load", () => {

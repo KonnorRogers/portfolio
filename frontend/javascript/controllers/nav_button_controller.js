@@ -5,8 +5,6 @@ export default class NavButtonController extends Controller {
 
   connect() {
     const children = Array.from(this.contentTarget.children);
-
-    document.addEventListener("turbolinks:load", () => {
       const currentPath = children.find((child) => {
         const href = child.getAttribute("href");
         if (href == window.location.pathname) {
@@ -17,8 +15,7 @@ export default class NavButtonController extends Controller {
       });
 
       currentPath.classList.add("text-indigo-700");
-    })
-  }
+    }
 
   toggle() {
     this.toggleIcon();

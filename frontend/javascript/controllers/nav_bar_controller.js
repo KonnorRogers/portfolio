@@ -1,4 +1,4 @@
-import { Controller } from "stimulus";
+import { Controller } from "./index";
 
 export default class NavBarController extends Controller {
   connect() {

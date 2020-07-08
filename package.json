@@ -29,6 +29,8 @@
     "parcel-bundler": "^1.12.4",
     "postcss-import": "^12.0.1",
     "start-server-and-test": "^1.11.0",
-    "tailwindcss": "^1.4.6"
+    "stimulus": "^1.1.1",
+    "tailwindcss": "^1.4.6",
+    "turbolinks": "^5.2.0"
   }
 }

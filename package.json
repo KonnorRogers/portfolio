@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "build": "bundle exec bridgetown build",
+    "build": "BRIDGETOWN_ENV=production bundle exec bridgetown build",
     "serve": "bundle exec bridgetown serve",
-    "snowpack-build": "webpack --mode production",
-    "deploy": "NODE_ENV=production yarn snowpack-build && BRIDGETOWN_ENV=production yarn build",
+    "snowpack-build": "NODE_ENV=production snowpack build",
+    "deploy": "yarn snowpack-build && yarn build",
     "start": "snowpack dev",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\"",

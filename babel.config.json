@@ -1,12 +1,5 @@
 {
   "presets": [
-    ["@babel/preset-env", {
-      "targets": {
-        "esmodules": true
-      },
-      "modules": false,
-      "useBuiltIns": false
-    }]
   ],
   "plugins": [
     ["@babel/plugin-proposal-decorators", { "decoratorsBeforeExport": true }],

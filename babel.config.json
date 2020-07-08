@@ -1,6 +1,14 @@
 {
   "presets": [
-    ["@babel/preset-env"]
+    ["@babel/preset-env", {
+      "corejs": 3,
+      "targets": {
+        "esmodules": true
+      }
+    }]
   ],
-  "plugins": ["@babel/plugin-proposal-class-properties"]
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "decoratorsBeforeExport": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }]
+  ]
 }

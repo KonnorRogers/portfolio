@@ -1,10 +1,11 @@
 {
   "presets": [
     ["@babel/preset-env", {
-      "corejs": 3,
       "targets": {
         "esmodules": true
-      }
+      },
+      "modules": false,
+      "useBuiltIns": false
     }]
   ],
   "plugins": [

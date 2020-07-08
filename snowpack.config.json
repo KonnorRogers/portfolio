@@ -18,7 +18,7 @@
     "clean": true
   },
   "plugins": [
-    "@snowpack/plugin-babel-package-import",
+    "@snowpack/plugin-babel",
     "@snowpack/plugin-parcel"
   ]
 }

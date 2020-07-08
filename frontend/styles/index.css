@@ -1,9 +1,9 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 h1 {
-  @apply text-2xl font-bold mt-8;
+  @apply mt-8 text-2xl font-bold;
 }
 
 h2 {
@@ -27,7 +27,7 @@ main {
 }
 
 a {
-  @apply inline text-indigo-800 border-b-2 border-solid border-transparent;
+  @apply inline text-indigo-800 border-b-2 border-transparent border-solid;
   @apply transition duration-500 ease-in-out;
   @apply border-indigo-800;
 }
@@ -48,5 +48,5 @@ p {
 
 code {
   font-size: 90%;
-  @apply px-2 py-1 bg-gray-300 text-gray-900 rounded;
+  @apply px-2 py-1 text-gray-900 bg-gray-300 rounded;
 }

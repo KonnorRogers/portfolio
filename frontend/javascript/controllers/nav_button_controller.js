@@ -19,9 +19,7 @@ export default class NavButtonController extends Controller {
 
   toggle() {
     this.toggleIcon();
-    setTimeout(() => {
-      this.toggleContent();
-    }, 200);
+    this.toggleContent();
   }
 
   toggleContent() {

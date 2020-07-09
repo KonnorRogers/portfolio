@@ -1,8 +1,4 @@
 {
-  "install": [
-    "stimulus",
-    "turbolinks"
-  ],
   "installOptions": {
     "NODE_ENV": true
   },

@@ -12,13 +12,12 @@
     "cy:run": "cypress run",
     "cy:test:ci": "start-server-and-test 'yarn start:ci' http-get://localhost:8080 'yarn cy:run'"
   },
-  "dependencies": {
-    "@babel/plugin-syntax-import-meta": "^7.10.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-proposal-decorators": "^7.10.4",
+    "@babel/plugin-syntax-import-meta": "^7.10.4",
     "@babel/preset-env": "^7.9.0",
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "@snowpack/plugin-babel": "^1.4.0",

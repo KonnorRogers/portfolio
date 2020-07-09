@@ -1,4 +1,11 @@
 {
+  "install": [
+    "stimulus",
+    "turbolinks"
+  ],
+  "installOptions": {
+    "NODE_ENV": true
+  },
   "scripts": {
     "mount:frontend": "mount frontend --to /_frontend_",
     "mount:output": "mount output --to /",
@@ -15,7 +22,8 @@
     "0.0.0.0:4000": "0.0.0.0:4000"
   },
   "buildOptions": {
-    "clean": true
+    "clean": true,
+    "baseUrl": "/"
   },
   "plugins": [
     "@snowpack/plugin-babel",

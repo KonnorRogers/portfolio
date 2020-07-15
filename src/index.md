@@ -16,7 +16,7 @@ I build websites using a variety of different technologies including Ruby on Rai
 I am currently open to both full-time and contract opportunities.
 {:.text-lg .mt-0 .mb-4 .mx-auto}
 
-<p class="px-0 pt-4 pb-12 mx-auto text-center my-2">
+<p class="px-0 pt-4 pb-12 mx-auto my-2 text-center">
   {% render "project_link", text: "View my work", tab_index: "0" %}
 </p>
 

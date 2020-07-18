@@ -4,7 +4,8 @@ module.exports = {
     options: {
       whitelist: ['pb-12', 'pt-8', 'text-indigo-700', 'bg-green-400']
     },
-    content: ['./src/**/*.html', './src/**/*.liquid']
+    content: ['./src/**/*.html', './src/**/*.liquid',
+              './output/**/*.html', './output/**/*.liquid']
   },
   theme: {
     extend: {

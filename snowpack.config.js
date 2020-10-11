@@ -16,6 +16,7 @@ const plugins = [
       watch: "$1 --watch",
     },
   ],
+  ["@snowpack/plugin-babel"],
   ["@snowpack/plugin-build-script", {"cmd": "postcss", "input": [".css"], "output": [".css"]}],
 ];
 
